@@ -14,6 +14,16 @@ export default function Home() {
         /> */}
         <ol className="list-inside text-lg text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">hello world ...</li>
+          <li className="mb-2">
+            <a
+              href="https://take-2-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              play take 2
+            </a>
+          </li>
         </ol>
 
         {/* <div className="flex gap-4 items-center flex-col sm:flex-row">
