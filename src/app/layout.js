@@ -13,8 +13,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Saurav Sitaula",
-  description: "Next Dashboard",
+  title: "Saurav Sitaula | JavaScript Developer",
+  description: "Portfolio of Saurav Sitaula - JavaScript Developer specializing in Node.js, React, and modern web technologies.",
 };
 
 export default function RootLayout({ children }) {
