@@ -10,6 +10,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-6 font-bold">
           <Link href="#about" className="hover:text-neo-primary transition-colors">About</Link>
           <Link href="#stack" className="hover:text-neo-primary transition-colors">Tech Stack</Link>
+          <Link href="#experience" className="hover:text-neo-primary transition-colors">Experience</Link>
           <Link href="#projects" className="hover:text-neo-primary transition-colors">Projects</Link>
           <Link href="#contact" className="hover:text-neo-primary transition-colors">Contact</Link>
         </div>
