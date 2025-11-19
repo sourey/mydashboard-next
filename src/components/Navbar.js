@@ -33,7 +33,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-[calc(100%)] left-4 right-4 bg-transparent flex flex-col gap-3 mt-2">
+        <div className="md:hidden absolute top-[calc(100%)] left-4 right-4 bg-neo-bg flex flex-col gap-3 mt-2 p-4 border-3 border-neo-dark shadow-neo-lg">
           <MobileNavLink href="#about" onClick={() => setIsOpen(false)} color="bg-neo-secondary">About</MobileNavLink>
           <MobileNavLink href="#stack" onClick={() => setIsOpen(false)} color="bg-neo-accent">Tech Stack</MobileNavLink>
           <MobileNavLink href="#experience" onClick={() => setIsOpen(false)} color="bg-neo-primary text-white">Experience</MobileNavLink>
