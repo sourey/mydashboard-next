@@ -7,7 +7,7 @@ export default function Hero() {
           Saurav<br />Sitaula
         </h1>
         <p className="font-mono text-lg md:text-xl font-bold bg-white inline-block px-2 py-1 border-2 border-neo-dark">
-          JavaScript Developer & Tech Enthusiast
+          Fullstack Software Engineer
         </p>
       </div>
       
@@ -15,8 +15,7 @@ export default function Hero() {
         <div className="neo-box p-6 bg-white">
           <h3 className="text-2xl font-black mb-4 border-b-3 border-neo-dark pb-2 inline-block">About Me</h3>
           <p className="text-lg leading-relaxed">
-            I&apos;m a passionate JavaScript developer specializing in <span className="font-bold bg-neo-secondary px-1">Node.js</span>, <span className="font-bold bg-neo-secondary px-1">React</span>, Php, and Laravel. 
-            I love building efficient, scalable, and maintainable software solutions. Currently based in Kathmandu, Nepal.
+            A highly skilled and versatile Full Stack Software Engineer with over 5 years of experience in developing robust and scalable web applications. Proficient in a wide range of technologies, including JavaScript, React, Redux, Node.js, and databases like MySQL and PostgreSQL. Demonstrated expertise in front-end development, back-end engineering, database design, and RESTful API development.
           </p>
           <div className="mt-6 flex gap-4">
             <a href="https://github.com/sourey" target="_blank" rel="noopener noreferrer" className="neo-button bg-neo-dark text-white hover:bg-gray-800">
@@ -29,9 +28,9 @@ export default function Hero() {
         </div>
         
         <div className="neo-box p-6 bg-neo-primary text-white flex flex-col justify-center items-center text-center">
-          <p className="font-mono text-xl mb-4">Currently Learning</p>
+          <p className="font-mono text-xl mb-4">Core Skills</p>
           <div className="flex flex-wrap gap-2 justify-center">
-             {['Next.js', 'Go', 'Astro'].map(tech => (
+             {['JavaScript', 'React', 'Node.js', 'Next.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'GraphQL'].map(tech => (
                <span key={tech} className="bg-white text-neo-dark border-2 border-neo-dark px-3 py-1 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                  {tech}
                </span>
@@ -42,4 +41,3 @@ export default function Hero() {
     </section>
   );
 }
-

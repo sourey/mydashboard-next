@@ -3,34 +3,34 @@ export default function Experience() {
     {
       role: "Senior Software Engineer",
       company: "UBA Solutions - A Monotype Partner Company",
-      period: "Sep 2024 - Present",
+      period: "2024 - Present",
       location: "Lalitpur District, Nepal · Hybrid",
-      description: null,
-      skills: []
+      description: "Driving full-stack development for Monotype font management and e-commerce services, leveraging React, Node.js, and headless Shopify to craft innovative e-commerce experiences.",
+      skills: ["React", "Node.js", "Headless Shopify", "E-commerce"]
     },
     {
-      role: "Senior Development Lead",
-      company: "Techart Trekkies",
-      period: "Nov 2022 - Feb 2024",
+      role: "Senior Developer, Development Lead",
+      company: "Techart Trekkies Pvt Ltd.",
+      period: "2023 - 2024",
       location: "Kathmandu, Bāgmatī, Nepal",
-      description: "Implemented logistics solutions as Senior Development Lead. Developed systems using JavaScript and React. Designed databases and APIs for efficient data handling. Improved server deployment processes. Managed feature releases following SDLC practices. Led development teams, enhancing productivity and innovation. Delivered scalable solutions that improved logistics operations.",
-      skills: ["Laravel", "Analytical Skills", "+10 skills"]
+      description: "Managed end-to-end web application development, ensuring seamless backend/frontend integration and successful product deployment. Led development initiatives for education and logistics web applications, encompassing feasibility analysis, feature planning, and documentation for streamlined releases. Directed full-stack development from conception to deployment, optimizing team efficiency and aligning projects with organizational goals.",
+      skills: ["Full Stack Development", "Team Leadership", "Project Management", "Web Applications"]
     },
     {
-      role: "Senior Full Stack Engineer",
-      company: "Techart Trekkies",
-      period: "Sep 2021 - Oct 2022",
+      role: "Senior Full Stack Developer",
+      company: "Techart Trekkies Pvt Ltd.",
+      period: "2021 - 2023",
       location: "Kathmandu, Bāgmatī, Nepal",
-      description: "Developed and maintained logistics and education web applications as Senior Full Stack Engineer. Built responsive front-end interfaces using React and JavaScript. Designed and optimized databases for efficient data management. Created RESTful APIs to facilitate seamless data flow. Implemented server-side logic and improved deployment processes. Collaborated with cross-functional teams to deliver feature releases. Mentored junior developers and contributed to code reviews. Resolved complex technical issues, enhancing system performance and reliability.",
-      skills: ["Laravel", "Analytical Skills", "+18 skills"]
+      description: "Developed full-stack web applications using React, Laravel, and Spring Boot, including database schema design and REST API integration. Built interactive web applications with React and Redux, deploying features and mentoring junior developers in web and React Native development. Executed full-stack development from relational database design to frontend integration, providing technical guidance and support for feature releases and bug fixes.",
+      skills: ["React", "Laravel", "Spring Boot", "Redux", "Mentoring"]
     },
     {
-      role: "Full Stack Engineer",
-      company: "Techart Trekkies",
-      period: "Mar 2019 - Aug 2021",
+      role: "Web Application Intern, Developer",
+      company: "Techart Trekkies Pvt Ltd.",
+      period: "2018 - 2021",
       location: "Nepal",
-      description: "Working with JavaScript; React and Node/Laravel",
-      skills: ["Laravel", "Analytical Skills", "+12 skills"]
+      description: "Create CRUD applications, develop UI wireframes, translate the wireframes into code with react and develop the backend to support it. Mainly used Spring Boot and Laravel.",
+      skills: ["Spring Boot", "Laravel", "React", "UI/UX"]
     }
   ];
 
@@ -86,4 +86,3 @@ export default function Experience() {
     </section>
   );
 }
-
