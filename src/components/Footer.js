@@ -1,72 +1,151 @@
+'use client';
+
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer id="contact" className="bg-neo-dark text-white py-12 border-t-3 border-neo-dark">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-5xl font-black uppercase mb-8 text-neo-primary">
-          Let&apos;s Build Something Cool
-        </h2>
-        
-        <div className="flex justify-center gap-4 md:gap-6 mb-12 flex-wrap">
-          <SocialButton 
-            href="https://github.com/sourey" 
-            label="GitHub" 
-            bgColor="bg-[#24292e]" 
-            textColor="text-white"
-          >
-            <GithubIcon />
-          </SocialButton>
-          
-          <SocialButton 
-            href="https://np.linkedin.com/in/saurav-sitaula-0bb174137" 
-            label="LinkedIn"
-            bgColor="bg-[#0077b5]"
-            textColor="text-white"
-          >
-            <LinkedinIcon />
-          </SocialButton>
-          
-          <SocialButton 
-            href="https://www.instagram.com/sourey" 
-            label="Instagram"
-            bgColor="bg-[#E1306C]"
-            textColor="text-white"
-          >
-            <InstagramIcon />
-          </SocialButton>
-          
-          <SocialButton 
-            href="https://www.facebook.com/soureyy" 
-            label="Facebook"
-            bgColor="bg-[#1877F2]"
-            textColor="text-white"
-          >
-            <FacebookIcon />
-          </SocialButton>
+    <footer id="contact" className="bg-neo-dark text-white relative overflow-hidden">
+      {/* Top Marquee */}
+      <div className="bg-neo-primary border-y-4 border-neo-dark py-3 overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap flex">
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className="flex items-center gap-8 mr-8">
+              {['GET IN TOUCH', '★', 'LET\'S COLLABORATE', '◆', 'HIRE ME', '●', 'SAY HELLO', '✦', 'WORK TOGETHER', '★'].map((text, idx) => (
+                <span key={idx} className={`text-xl font-black uppercase ${idx % 2 === 0 ? 'text-white' : 'text-neo-dark'}`}>
+                  {text}
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
-        
-        <p className="font-mono text-sm text-gray-400">
-          © {new Date().getFullYear()} Saurav Sitaula. Built with Next.js & NeoBrutalism.
-        </p>
       </div>
+
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left: CTA */}
+          <div>
+            <span className="neo-tag bg-neo-accent text-neo-dark mb-6 inline-block">Contact</span>
+            <h2 className="neo-title text-5xl md:text-6xl lg:text-7xl uppercase mb-6 leading-[0.9]">
+              Let&apos;s Build<br />
+              <span className="text-neo-accent">Something</span><br />
+              <span className="text-neo-primary">Cool</span>
+            </h2>
+            <p className="text-lg text-gray-300 mb-8 max-w-md">
+              I&apos;m currently available for freelance work and full-time positions. 
+              Let&apos;s create something amazing together!
+            </p>
+
+            {/* Email Button */}
+            <a 
+              href="mailto:saurav@example.com" 
+              className="neo-button bg-neo-accent text-neo-dark inline-flex items-center gap-3"
+            >
+              <span>📧</span>
+              Drop me an email
+            </a>
+          </div>
+
+          {/* Right: Social Links */}
+          <div className="neo-box p-8 bg-white text-neo-dark">
+            <h3 className="text-2xl font-black uppercase mb-6">Find Me Online</h3>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <SocialCard 
+                href="https://github.com/sourey" 
+                label="GitHub" 
+                icon={<GithubIcon />}
+                color="bg-[#24292e]"
+                description="Code & Projects"
+              />
+              <SocialCard 
+                href="https://np.linkedin.com/in/saurav-sitaula-0bb174137" 
+                label="LinkedIn"
+                icon={<LinkedinIcon />}
+                color="bg-[#0077b5]"
+                description="Professional"
+              />
+              <SocialCard 
+                href="https://www.instagram.com/sourey" 
+                label="Instagram"
+                icon={<InstagramIcon />}
+                color="bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#F77737]"
+                description="Personal"
+              />
+              <SocialCard 
+                href="https://www.facebook.com/soureyy" 
+                label="Facebook"
+                icon={<FacebookIcon />}
+                color="bg-[#1877F2]"
+                description="Connect"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t-4 border-neo-dark bg-neo-bg text-neo-dark">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            {/* Logo */}
+            <div className="font-mono font-black text-xl uppercase">
+              Saurav<span className="text-neo-primary">.dev</span>
+            </div>
+
+            {/* Copyright */}
+            <p className="font-mono text-sm text-center">
+              © {currentYear} Saurav Sitaula. 
+              <span className="hidden md:inline"> Built with </span>
+              <span className="text-neo-primary font-bold">Next.js</span>
+              <span className="hidden md:inline"> & </span>
+              <span className="text-neo-secondary font-bold">NeoBrutalism</span>
+            </p>
+
+            {/* Decorative */}
+            <div className="flex gap-2">
+              <div className="w-4 h-4 bg-neo-primary border-2 border-neo-dark" />
+              <div className="w-4 h-4 bg-neo-accent border-2 border-neo-dark" />
+              <div className="w-4 h-4 bg-neo-secondary border-2 border-neo-dark" />
+              <div className="w-4 h-4 bg-neo-purple border-2 border-neo-dark" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Background decorations */}
+      <div className="absolute top-1/4 -right-20 w-40 h-40 border-4 border-white/10 rotate-12" />
+      <div className="absolute bottom-1/4 -left-16 w-32 h-32 border-4 border-white/10 -rotate-12 rounded-full" />
     </footer>
   );
 }
 
-function SocialButton({ href, children, label, bgColor, textColor }) {
+function SocialCard({ href, icon, label, color, description }) {
   return (
     <a 
       href={href}
       target="_blank" 
       rel="noopener noreferrer" 
-      className={`flex items-center justify-center w-12 h-12 md:w-14 md:h-14 border-3 border-neo-dark shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${bgColor} ${textColor}`}
-      aria-label={label}
+      className="neo-box p-4 group hover:-translate-y-1 hover:shadow-neo-lg transition-all overflow-hidden relative"
     >
-      {children}
+      {/* Background on hover */}
+      <div className={`absolute inset-0 ${color} transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-center`} />
+      
+      <div className="relative z-10 flex flex-col items-center text-center">
+        <div className="text-3xl mb-2 group-hover:text-white transition-colors group-hover:scale-110 transform">
+          {icon}
+        </div>
+        <span className="font-black uppercase text-sm group-hover:text-white transition-colors">
+          {label}
+        </span>
+        <span className="text-xs text-gray-500 group-hover:text-white/70 transition-colors">
+          {description}
+        </span>
+      </div>
     </a>
   );
 }
 
-// Simple SVG Icons
+// SVG Icons
 function GithubIcon() {
   return (
     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 496 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">

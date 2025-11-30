@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
-  --background: #fdfbe8;
-  --foreground: #1a1a1a;
+  --background: #FFF8E7;
+  --foreground: #0A0A0A;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #FF3366;
+  color: white;
 }
 
 body {
@@ -14,17 +26,208 @@ body {
   overflow-x: hidden;
 }
 
-/* NeoBrutalism Utilities */
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8E7;
+  border-left: 3px solid #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF3366;
+  border: 3px solid #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9D4EDD;
+}
+
+/* NeoBrutalism Core Utilities */
 .neo-box {
-  @apply bg-white border-3 border-neo-dark shadow-neo transition-all duration-200;
+  @apply bg-white border-4 border-neo-dark shadow-neo transition-all duration-200;
+}
+
+.neo-box-hover {
+  @apply neo-box hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none;
 }
 
 .neo-button {
-  @apply px-6 py-3 bg-neo-primary text-white font-bold border-3 border-neo-dark shadow-neo hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-hover active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all;
+  @apply px-6 py-3 bg-neo-primary text-white font-bold border-4 border-neo-dark shadow-neo 
+         hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-hover 
+         active:translate-x-[4px] active:translate-y-[4px] active:shadow-none 
+         transition-all cursor-pointer uppercase tracking-wider;
+}
+
+.neo-button-outline {
+  @apply px-6 py-3 bg-transparent text-neo-dark font-bold border-4 border-neo-dark shadow-neo 
+         hover:bg-neo-dark hover:text-white hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-hover 
+         active:translate-x-[4px] active:translate-y-[4px] active:shadow-none 
+         transition-all cursor-pointer uppercase tracking-wider;
 }
 
 .neo-input {
-  @apply w-full p-3 border-3 border-neo-dark shadow-neo focus:outline-none focus:shadow-neo-hover focus:translate-x-[2px] focus:translate-y-[2px] transition-all bg-white;
+  @apply w-full p-4 border-4 border-neo-dark shadow-neo 
+         focus:outline-none focus:shadow-neo-colored focus:translate-x-[2px] focus:translate-y-[2px] 
+         transition-all bg-white font-medium;
+}
+
+/* Display Typography */
+.neo-title {
+  font-family: 'Space Grotesk', var(--font-geist-sans), sans-serif;
+  @apply font-bold tracking-tighter;
+}
+
+/* Zigzag Border Pattern */
+.zigzag-top {
+  position: relative;
+}
+
+.zigzag-top::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: linear-gradient(135deg, transparent 33.33%, #0A0A0A 33.33%, #0A0A0A 66.67%, transparent 66.67%),
+              linear-gradient(225deg, transparent 33.33%, #0A0A0A 33.33%, #0A0A0A 66.67%, transparent 66.67%);
+  background-size: 30px 100%;
+}
+
+.zigzag-bottom {
+  position: relative;
+}
+
+.zigzag-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: linear-gradient(135deg, transparent 33.33%, #0A0A0A 33.33%, #0A0A0A 66.67%, transparent 66.67%),
+              linear-gradient(225deg, transparent 33.33%, #0A0A0A 33.33%, #0A0A0A 66.67%, transparent 66.67%);
+  background-size: 30px 100%;
+}
+
+/* Noise texture overlay */
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Dot pattern */
+.dot-pattern {
+  background-image: radial-gradient(#0A0A0A 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Cross pattern */
+.cross-pattern {
+  background-image: 
+    linear-gradient(#0A0A0A 1px, transparent 1px),
+    linear-gradient(90deg, #0A0A0A 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
+
+/* Grid pattern */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(10,10,10,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,10,10,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Marquee */
+.marquee-container {
+  @apply overflow-hidden whitespace-nowrap;
+}
+
+.marquee-content {
+  @apply inline-flex;
+}
+
+/* Stagger animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+.stagger-7 { animation-delay: 0.7s; }
+.stagger-8 { animation-delay: 0.8s; }
+
+/* Floating shapes base */
+.floating-shape {
+  @apply absolute pointer-events-none;
+}
+
+/* Striped background */
+.striped-bg {
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(10, 10, 10, 0.03) 10px,
+    rgba(10, 10, 10, 0.03) 20px
+  );
+}
+
+/* Glitch effect on hover */
+.glitch-hover:hover {
+  animation: glitch 0.3s ease-in-out;
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+/* Retro highlight */
+.retro-highlight {
+  background: linear-gradient(transparent 60%, #FFE500 60%);
+  padding: 0 4px;
+}
+
+/* Tag styles */
+.neo-tag {
+  @apply inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider
+         border-3 border-neo-dark bg-white shadow-[2px_2px_0px_0px_#0A0A0A]
+         hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#0A0A0A]
+         transition-all;
+}
+
+/* Section title underline */
+.section-title-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #FF3366;
+  border: 2px solid #0A0A0A;
 }
 
 @layer utilities {
