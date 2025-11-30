@@ -32,11 +32,12 @@ export default function Navbar() {
         </Link>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-3 items-center">
+        <div className="hidden lg:flex gap-3 items-center">
           <NavLink href="#about" color="bg-neo-lime">About</NavLink>
-          <NavLink href="#stack" color="bg-neo-accent">Stack</NavLink>
           <NavLink href="#experience" color="bg-neo-secondary text-white">Experience</NavLink>
+          <NavLink href="#stack" color="bg-neo-accent">Stack</NavLink>
           <NavLink href="#projects" color="bg-neo-purple text-white">Projects</NavLink>
+          <NavLink href="/hobbies" color="bg-neo-orange text-white">Hobbies</NavLink>
           <a 
             href="#contact" 
             className="neo-button bg-neo-primary text-sm py-2"
@@ -48,7 +49,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden font-black text-2xl border-4 border-neo-dark w-12 h-12 flex items-center justify-center shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${
+          className={`lg:hidden font-black text-2xl border-4 border-neo-dark w-12 h-12 flex items-center justify-center shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${
             isOpen ? 'bg-neo-primary text-white rotate-90' : 'bg-neo-accent'
           }`}
         >
@@ -58,19 +59,22 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-dark">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-dark">
           <div className="flex flex-col p-4 gap-3 max-w-7xl mx-auto">
             <MobileNavLink href="#about" onClick={() => setIsOpen(false)} color="bg-neo-lime">
               <span className="mr-2">👋</span> About
             </MobileNavLink>
-            <MobileNavLink href="#stack" onClick={() => setIsOpen(false)} color="bg-neo-accent">
-              <span className="mr-2">⚡</span> Tech Stack
-            </MobileNavLink>
             <MobileNavLink href="#experience" onClick={() => setIsOpen(false)} color="bg-neo-secondary text-white">
               <span className="mr-2">💼</span> Experience
             </MobileNavLink>
+            <MobileNavLink href="#stack" onClick={() => setIsOpen(false)} color="bg-neo-accent">
+              <span className="mr-2">⚡</span> Tech Stack
+            </MobileNavLink>
             <MobileNavLink href="#projects" onClick={() => setIsOpen(false)} color="bg-neo-purple text-white">
               <span className="mr-2">🚀</span> Projects
+            </MobileNavLink>
+            <MobileNavLink href="/hobbies" onClick={() => setIsOpen(false)} color="bg-neo-orange text-white">
+              <span className="mr-2">📸</span> Hobbies
             </MobileNavLink>
             <MobileNavLink href="#contact" onClick={() => setIsOpen(false)} color="bg-neo-primary text-white">
               <span className="mr-2">📧</span> Contact

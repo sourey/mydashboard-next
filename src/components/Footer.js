@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="animate-marquee whitespace-nowrap flex">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex items-center gap-8 mr-8">
-              {['GET IN TOUCH', '★', 'LET\'S COLLABORATE', '◆', 'HIRE ME', '●', 'SAY HELLO', '✦', 'WORK TOGETHER', '★'].map((text, idx) => (
+              {['GET IN TOUCH', '★', 'LET\'S COLLABORATE', '●', 'SAY HELLO', '✦', 'WORK TOGETHER', '★'].map((text, idx) => (
                 <span key={idx} className={`text-xl font-black uppercase ${idx % 2 === 0 ? 'text-white' : 'text-neo-dark'}`}>
                   {text}
                 </span>
@@ -37,7 +37,7 @@ export default function Footer() {
 
             {/* Email Button */}
             <a 
-              href="mailto:saurav@example.com" 
+              href="mailto:sitaulasaurav@gmail.com" 
               className="neo-button bg-neo-accent text-neo-dark inline-flex items-center gap-3"
             >
               <span>📧</span>
@@ -65,7 +65,7 @@ export default function Footer() {
                 description="Professional"
               />
               <SocialCard 
-                href="https://www.instagram.com/sourey" 
+                href="https://www.instagram.com/sou_rey" 
                 label="Instagram"
                 icon={<InstagramIcon />}
                 color="bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#F77737]"
