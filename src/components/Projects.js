@@ -4,6 +4,16 @@ import { useEffect, useRef, useState } from 'react';
 
 const projects = [
   {
+    name: 'Take 2',
+    description: 'An interactive card game built with modern web technologies. Deal cards, strategize, and have fun! Play it live now.',
+    tags: ['React', 'Game', 'Interactive'],
+    link: 'https://take-2-tau.vercel.app/',
+    featured: true,
+    color: 'bg-neo-orange',
+    emoji: '🃏',
+    isLive: true
+  },
+  {
     name: 'Jira Clone',
     description: 'A simplified Jira clone built with React/Babel and Node/TypeScript. Full project management capabilities.',
     tags: ['React', 'Node', 'TypeScript'],
@@ -17,7 +27,7 @@ const projects = [
     description: 'Movie recommendation system with content based filtering using cosine similarity. ML-powered suggestions.',
     tags: ['JavaScript', 'ML', 'Algorithms'],
     link: 'https://github.com/sourey/movies_recommendation',
-    featured: true,
+    featured: false,
     color: 'bg-neo-primary',
     emoji: '🎬'
   },
@@ -116,7 +126,7 @@ export default function Projects() {
               <div className="relative z-10">
                 {/* Featured badge */}
                 <div className="absolute -top-2 -right-2 bg-neo-accent border-4 border-neo-dark px-3 py-1 font-black text-xs uppercase rotate-3">
-                  ⭐ Featured
+                  {project.isLive ? '🔴 LIVE DEMO' : '⭐ Featured'}
                 </div>
 
                 <span className="text-5xl mb-4 block">{project.emoji}</span>
@@ -141,7 +151,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center gap-2 font-black uppercase text-sm group-hover:text-white transition-colors">
-                  View Project 
+                  {project.isLive ? 'Play Now' : 'View Project'}
                   <span className="transform group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform text-xl">↗</span>
                 </div>
               </div>
