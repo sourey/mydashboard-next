@@ -16,14 +16,20 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`w-full py-4 px-4 sticky top-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-neo-bg/95 backdrop-blur-sm border-b-4 border-neo-dark' : 'bg-transparent'
-    }`}>
+    <nav 
+      className={`w-full py-4 px-4 sticky top-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-neo-bg/95 backdrop-blur-sm border-b-4 border-neo-dark' : 'bg-transparent'
+      }`}
+      aria-label="Main navigation"
+      role="navigation"
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link 
           href="/" 
           className="group relative"
+          aria-label="Saurav Sitaula - Home"
+          title="Saurav Sitaula Portfolio"
         >
           <div className="absolute -inset-1 bg-neo-accent border-4 border-neo-dark transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
           <div className="relative bg-neo-dark text-white px-4 py-2 font-mono font-black text-xl uppercase tracking-tighter transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
@@ -52,6 +58,9 @@ export default function Navbar() {
           className={`lg:hidden font-black text-2xl border-4 border-neo-dark w-12 h-12 flex items-center justify-center shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${
             isOpen ? 'bg-neo-primary text-white rotate-90' : 'bg-neo-accent'
           }`}
+          aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
         >
           {isOpen ? '✕' : '☰'}
         </button>
@@ -59,7 +68,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-dark">
+        <div id="mobile-menu" className="lg:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-dark" role="menu">
           <div className="flex flex-col p-4 gap-3 max-w-7xl mx-auto">
             <MobileNavLink href="#about" onClick={() => setIsOpen(false)} color="bg-neo-lime">
               <span className="mr-2">👋</span> About

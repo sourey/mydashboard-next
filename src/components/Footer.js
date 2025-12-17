@@ -4,13 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer id="contact" className="bg-neo-dark text-white relative overflow-hidden">
+    <footer id="contact" className="bg-neo-dark text-white relative overflow-hidden" aria-labelledby="contact-title" itemScope itemType="https://schema.org/Person">
       {/* Top Marquee */}
       <div className="bg-neo-primary border-y-4 border-neo-dark py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap flex">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex items-center gap-8 mr-8">
-              {['GET IN TOUCH', '★', 'LET\'S COLLABORATE', '●', 'SAY HELLO', '✦', 'WORK TOGETHER', '★'].map((text, idx) => (
+              {['GET IN TOUCH', '★', 'LET\'S BUILD', '●', 'COLLABORATE', '✦', 'CREATE IMPACT', '★'].map((text, idx) => (
                 <span key={idx} className={`text-xl font-black uppercase ${idx % 2 === 0 ? 'text-white' : 'text-neo-dark'}`}>
                   {text}
                 </span>
@@ -25,22 +25,24 @@ export default function Footer() {
           {/* Left: CTA */}
           <div>
             <span className="neo-tag bg-neo-accent text-neo-dark mb-6 inline-block">Contact</span>
-            <h2 className="neo-title text-5xl md:text-6xl lg:text-7xl uppercase mb-6 leading-[0.9]">
+            <h2 id="contact-title" className="neo-title text-5xl md:text-6xl lg:text-7xl uppercase mb-6 leading-[0.9]">
               Let&apos;s Build<br />
               <span className="text-neo-accent">Something</span><br />
               <span className="text-neo-primary">Cool</span>
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-md">
-              I&apos;m currently available for freelance work and full-time positions. 
-              Let&apos;s create something amazing together!
+              Open to strategic partnerships, consulting engagements, and impactful opportunities. 
+              Let&apos;s engineer something exceptional together.
             </p>
 
             {/* Email Button */}
             <a 
               href="mailto:sitaulasaurav@gmail.com" 
               className="neo-button bg-neo-accent text-neo-dark inline-flex items-center gap-3"
+              itemProp="email"
+              aria-label="Send email to Saurav Sitaula at sitaulasaurav@gmail.com"
             >
-              <span>📧</span>
+              <span aria-hidden="true">📧</span>
               Drop me an email
             </a>
           </div>
@@ -56,6 +58,7 @@ export default function Footer() {
                 icon={<GithubIcon />}
                 color="bg-[#24292e]"
                 description="Code & Projects"
+                itemProp="sameAs"
               />
               <SocialCard 
                 href="https://np.linkedin.com/in/saurav-sitaula-0bb174137" 
@@ -63,6 +66,7 @@ export default function Footer() {
                 icon={<LinkedinIcon />}
                 color="bg-[#0077b5]"
                 description="Professional"
+                itemProp="sameAs"
               />
               <SocialCard 
                 href="https://www.instagram.com/sou_rey" 
@@ -70,6 +74,7 @@ export default function Footer() {
                 icon={<InstagramIcon />}
                 color="bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#F77737]"
                 description="Personal"
+                itemProp="sameAs"
               />
               <SocialCard 
                 href="https://www.facebook.com/soureyy" 
@@ -77,6 +82,7 @@ export default function Footer() {
                 icon={<FacebookIcon />}
                 color="bg-[#1877F2]"
                 description="Connect"
+                itemProp="sameAs"
               />
             </div>
           </div>
@@ -119,13 +125,15 @@ export default function Footer() {
   );
 }
 
-function SocialCard({ href, icon, label, color, description }) {
+function SocialCard({ href, icon, label, color, description, itemProp }) {
   return (
     <a 
       href={href}
       target="_blank" 
       rel="noopener noreferrer" 
       className="neo-box p-4 group hover:-translate-y-1 hover:shadow-neo-lg transition-all overflow-hidden relative"
+      aria-label={`Visit Saurav Sitaula's ${label} profile`}
+      itemProp={itemProp}
     >
       {/* Background on hover */}
       <div className={`absolute inset-0 ${color} transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-center`} />

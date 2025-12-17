@@ -29,18 +29,18 @@ export default function Experience() {
       company: "UBA Solutions - A Monotype Partner Company",
       period: "2024 - Present",
       location: "Lalitpur District, Nepal · Hybrid",
-      description: "Driving full-stack development for Monotype font management and e-commerce services, leveraging React, Node.js, and headless Shopify to craft innovative e-commerce experiences.",
+      description: "Spearheading full-stack development for Monotype's font management platform and e-commerce ecosystem. Architecting scalable solutions with React, Node.js, and headless Shopify that serve enterprise clients globally.",
       skills: ["React", "Node.js", "Headless Shopify", "E-commerce"],
       color: "bg-neo-primary",
       badge: "🔥 Current"
     },
     {
-      role: "Senior Developer, Development Lead",
+      role: "Senior Developer & Development Lead",
       company: "Techart Trekkies Pvt Ltd.",
       period: "2023 - 2024",
       location: "Kathmandu, Bāgmatī, Nepal",
-      description: "Managed end-to-end web application development, ensuring seamless backend/frontend integration. Led development initiatives for education and logistics web applications, encompassing feasibility analysis and feature planning.",
-      skills: ["Full Stack Development", "Team Leadership", "Project Management", "Web Applications"],
+      description: "Led a cross-functional team delivering end-to-end web solutions for education and logistics sectors. Drove technical strategy, conducted feasibility analysis, and ensured seamless integration across the entire stack.",
+      skills: ["Technical Leadership", "System Architecture", "Project Management", "Full Stack"],
       color: "bg-neo-purple",
       badge: "👑 Lead"
     },
@@ -49,32 +49,32 @@ export default function Experience() {
       company: "Techart Trekkies Pvt Ltd.",
       period: "2021 - 2023",
       location: "Kathmandu, Bāgmatī, Nepal",
-      description: "Developed full-stack web applications using React, Laravel, and Spring Boot, including database schema design and REST API integration. Built interactive applications with React and Redux.",
+      description: "Engineered production-grade web applications using React, Laravel, and Spring Boot. Designed robust database schemas, implemented RESTful APIs, and mentored junior developers on best practices.",
       skills: ["React", "Laravel", "Spring Boot", "Redux", "Mentoring"],
       color: "bg-neo-secondary",
       badge: "⚡ Senior"
     },
     {
-      role: "Web Application Intern → Developer",
+      role: "Software Developer",
       company: "Techart Trekkies Pvt Ltd.",
-      period: "2018 - 2021",
+      period: "2017 - 2021",
       location: "Nepal",
-      description: "Created CRUD applications, developed UI wireframes, translated wireframes into code with React and developed the backend to support it.",
-      skills: ["Spring Boot", "Laravel", "React", "UI/UX"],
+      description: "Progressed from intern to developer, building foundational expertise across the stack. Developed responsive UIs with React, built backend services with Spring Boot and Laravel, and established strong software engineering fundamentals.",
+      skills: ["Spring Boot", "Laravel", "React", "UI Development"],
       color: "bg-neo-accent",
-      badge: "🌱 Growth"
+      badge: "🚀 Foundation"
     }
   ];
 
   return (
-    <section id="experience" className="py-20 relative" ref={sectionRef}>
+    <section id="experience" className="py-20 relative" ref={sectionRef} aria-labelledby="experience-title" itemScope itemType="https://schema.org/ItemList">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title */}
         <div className="flex justify-center mb-16">
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-neo-accent transform translate-x-2 translate-y-2" />
-            <h2 className="relative neo-title text-4xl md:text-6xl lg:text-7xl uppercase bg-neo-dark text-white border-4 border-neo-dark px-6 py-4 transform -rotate-1">
-              Experience
+            <h2 id="experience-title" className="relative neo-title text-4xl md:text-6xl lg:text-7xl uppercase bg-neo-dark text-white border-4 border-neo-dark px-6 py-4 transform -rotate-1">
+              Career Journey
             </h2>
           </div>
         </div>

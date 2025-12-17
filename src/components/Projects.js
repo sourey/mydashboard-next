@@ -82,7 +82,7 @@ export default function Projects() {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section id="projects" className="py-20 relative" ref={sectionRef}>
+    <section id="projects" className="py-20 relative" ref={sectionRef} aria-labelledby="projects-title" itemScope itemType="https://schema.org/ItemList">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-neo-lime opacity-20 border-4 border-neo-dark transform rotate-12 translate-x-32 -translate-y-16" />
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-neo-purple opacity-20 border-4 border-neo-dark transform -rotate-12 -translate-x-24 translate-y-16" />
@@ -92,7 +92,7 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">
           <div>
             <span className="neo-tag bg-neo-purple text-white mb-4 inline-block">Portfolio</span>
-            <h2 className="neo-title text-4xl md:text-6xl lg:text-7xl uppercase">
+            <h2 id="projects-title" className="neo-title text-4xl md:text-6xl lg:text-7xl uppercase">
               Selected<br />
               <span className="text-neo-primary">Projects</span>
             </h2>
@@ -207,7 +207,7 @@ export default function Projects() {
               Interested in working together?
             </h3>
             <p className="text-lg mb-6 max-w-2xl mx-auto">
-              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+              Ready to discuss challenging projects, innovative solutions, or strategic opportunities where I can drive real impact.
             </p>
             <a href="#contact" className="neo-button bg-neo-dark text-white inline-block">
               Let&apos;s Talk →
