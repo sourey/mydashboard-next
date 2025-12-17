@@ -2,31 +2,44 @@
 
 import { useEffect, useState } from 'react';
 
-// Websites worked on
+// Websites and apps built
 const workedOnSites = [
   {
     name: 'MyFonts',
     url: 'https://www.myfonts.com/',
     description: 'World\'s largest font marketplace',
+    type: 'Web Platform',
     color: '#E31837',
   },
   {
     name: 'Monotype Fonts',
     url: 'https://www.monotypefonts.com/',
-    description: 'Enterprise font platform',
+    description: 'Enterprise font management',
+    type: 'Web Platform',
     color: '#000000',
   },
   {
     name: 'AllImpexo',
     url: 'https://app.allimpexo.com/',
-    description: 'Business management app',
+    description: 'Business management suite',
+    type: 'Web + iOS + Android',
     color: '#4F46E5',
+    hasMobile: true,
   },
   {
     name: 'Imagine Inquiry Sys',
     url: 'https://imagineinquirysys.com/',
     description: 'Learning management system',
+    type: 'Web + iOS + Android',
     color: '#059669',
+    hasMobile: true,
+  },
+  {
+    name: 'IKBH Group',
+    url: 'https://www.ikbhgroup.com.np/',
+    description: 'E-commerce & appliances',
+    type: 'Web Platform',
+    color: '#DC2626',
   },
 ];
 
@@ -65,6 +78,11 @@ export default function Hero() {
                   <span className="text-white font-bold text-sm group-hover:text-neo-accent transition-colors">
                     {site.name}
                   </span>
+                  {site.hasMobile && (
+                    <span className="text-[10px] bg-neo-lime text-neo-dark px-1.5 py-0.5 rounded font-bold">
+                      📱
+                    </span>
+                  )}
                   <span className="text-white/40 text-xs">↗</span>
                 </a>
               ))}
@@ -88,18 +106,18 @@ export default function Hero() {
               <span className="block text-transparent" style={{ WebkitTextStroke: '3px #0A0A0A' }} itemProp="familyName">Sitaula</span>
             </h1>
             
-            <div className="flex flex-wrap gap-3 mb-8">
+            {/* <div className="flex flex-wrap gap-3 mb-8">
               <span className="neo-box px-4 py-2 bg-neo-primary font-black text-lg">
-                Senior
-              </span>
-              <span className="neo-box px-4 py-2 bg-neo-secondary font-black text-lg">
                 Software
               </span>
-              <span className="neo-box px-4 py-2 bg-neo-accent font-black text-lg">
-                Engineer
+              <span className="neo-box px-4 py-2 bg-neo-secondary font-black text-lg">
+                Architect
               </span>
-            </div>
-
+              <span className="neo-box px-4 py-2 bg-neo-accent font-black text-lg">
+                & Lead
+              </span>
+            </div> */}
+{/* 
             <div className="flex flex-wrap gap-4">
               <a 
                 href="https://github.com/sourey" 
@@ -117,7 +135,7 @@ export default function Hero() {
               >
                 LinkedIn
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Right: About Card */}
@@ -133,18 +151,18 @@ export default function Hero() {
               </h3>
               
               <p className="text-lg leading-relaxed mb-6 mt-8">
-                I&apos;m a <span className="retro-highlight font-bold">Senior Full Stack Software Engineer</span> with 7+ years of hands-on experience architecting and delivering production-grade web applications that scale.
+                I&apos;m a <span className="retro-highlight font-bold">Software Architect</span> with 7+ years of experience designing and delivering scalable systems across web and mobile platforms.
               </p>
               
               <p className="text-lg leading-relaxed mb-6">
-                I bring deep expertise in <span className="font-bold">JavaScript, TypeScript, React, Node.js</span>, and database systems including PostgreSQL and MongoDB. My track record spans leading development teams, building complex e-commerce platforms, and engineering solutions that drive real business impact.
+                Deep expertise in <span className="font-bold">React, React Native, Node.js, TypeScript</span>, and cloud infrastructure. I architect solutions that handle millions of users — from enterprise font platforms to e-commerce systems and cross-platform mobile applications.
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mt-8">
-                <StatBox number="7+" label="Years Exp" color="bg-neo-primary" />
+                <StatBox number="7+" label="Years" color="bg-neo-primary" />
                 <StatBox number="25+" label="Projects" color="bg-neo-secondary" />
-                <StatBox number="∞" label="Ambition" color="bg-neo-purple" />
+                <StatBox number="3" label="Platforms" color="bg-neo-purple" />
               </div>
             </div>
           </div>
@@ -155,15 +173,19 @@ export default function Hero() {
           <div className="neo-box p-6 md:p-8 bg-white relative overflow-hidden">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
               <div>
-                <span className="neo-tag bg-neo-primary text-white mb-2 inline-block">Portfolio Highlights</span>
+                <span className="neo-tag bg-neo-primary text-white mb-2 inline-block">Portfolio</span>
                 <h3 className="text-2xl font-black uppercase">
-                  Products I&apos;ve <span className="text-neo-primary">Shipped</span>
+                  Products <span className="text-neo-primary">Shipped</span>
                 </h3>
               </div>
-              <span className="text-sm font-mono text-gray-500">Live production applications</span>
+              <div className="flex gap-2 flex-wrap">
+                <span className="text-xs font-mono bg-neo-dark text-white px-2 py-1 rounded">Web</span>
+                <span className="text-xs font-mono bg-neo-purple text-white px-2 py-1 rounded">iOS</span>
+                <span className="text-xs font-mono bg-neo-lime text-neo-dark px-2 py-1 rounded">Android</span>
+              </div>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
               {workedOnSites.map((site, idx) => (
                 <a
                   key={idx}
@@ -181,21 +203,34 @@ export default function Hero() {
                   <div className="relative z-10">
                     {/* Logo placeholder */}
                     <div 
-                      className="w-12 h-12 rounded-xl flex items-center justify-center text-white text-xl font-black mb-3 shadow-neo border-2 border-neo-dark"
+                      className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-black mb-3 shadow-neo border-2 border-neo-dark"
                       style={{ backgroundColor: site.color }}
                     >
                       {site.name.charAt(0)}
                     </div>
                     
-                    <h4 className="font-black text-lg uppercase mb-1 group-hover:text-neo-primary transition-colors leading-tight">
+                    <h4 className="font-black text-sm uppercase mb-1 group-hover:text-neo-primary transition-colors leading-tight">
                       {site.name}
                     </h4>
                     
-                    <p className="text-xs text-gray-500 mb-3 line-clamp-2">
+                    <p className="text-[11px] text-gray-500 mb-2 line-clamp-1">
                       {site.description}
                     </p>
+
+                    {/* Platform badges */}
+                    <div className="flex flex-wrap gap-1 mb-2">
+                      {site.hasMobile ? (
+                        <>
+                          <span className="text-[9px] bg-neo-dark text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
+                          <span className="text-[9px] bg-neo-purple text-white px-1.5 py-0.5 rounded font-bold">iOS</span>
+                          <span className="text-[9px] bg-neo-lime text-neo-dark px-1.5 py-0.5 rounded font-bold">Android</span>
+                        </>
+                      ) : (
+                        <span className="text-[9px] bg-neo-dark text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
+                      )}
+                    </div>
                     
-                    <div className="flex items-center gap-1 text-xs font-bold uppercase text-gray-400 group-hover:text-neo-dark transition-colors">
+                    <div className="flex items-center gap-1 text-[10px] font-bold uppercase text-gray-400 group-hover:text-neo-dark transition-colors">
                       Visit <span className="transform group-hover:translate-x-1 transition-transform">↗</span>
                     </div>
                   </div>
@@ -214,9 +249,9 @@ export default function Hero() {
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                 <h3 className="text-2xl font-black uppercase">
-                  <span className="text-neo-accent">Core</span> Expertise
+                  <span className="text-neo-accent">Technical</span> Expertise
                 </h3>
-                <span className="text-sm font-mono opacity-60">Battle-tested technologies I deliver with</span>
+                <span className="text-sm font-mono opacity-60">Web · Mobile · Cloud</span>
               </div>
               
               <div className="flex flex-wrap gap-3">
@@ -224,10 +259,10 @@ export default function Hero() {
                   { name: 'JavaScript', color: 'bg-neo-accent text-neo-dark' },
                   { name: 'TypeScript', color: 'bg-neo-blue text-white' },
                   { name: 'React', color: 'bg-neo-secondary text-white' },
+                  { name: 'React Native', color: 'bg-neo-purple text-white' },
                   { name: 'Next.js', color: 'bg-white text-neo-dark' },
                   { name: 'Node.js', color: 'bg-neo-lime text-neo-dark' },
-                  { name: 'PostgreSQL', color: 'bg-neo-purple text-white' },
-                  { name: 'MongoDB', color: 'bg-neo-orange text-white' },
+                  { name: 'PostgreSQL', color: 'bg-neo-orange text-white' },
                   { name: 'GraphQL', color: 'bg-neo-primary text-white' },
                 ].map((tech, idx) => (
                   <span 

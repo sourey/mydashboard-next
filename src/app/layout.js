@@ -18,10 +18,10 @@ const siteUrl = "https://sauravsitaula.com.np";
 export const metadata = {
   // Primary Meta Tags
   title: {
-    default: "Saurav Sitaula | Senior Full Stack Software Engineer | React & Node.js Expert | Nepal",
+    default: "Saurav Sitaula | Software Architect | React, React Native & Node.js Expert | Nepal",
     template: "%s | Saurav Sitaula"
   },
-  description: "Saurav Sitaula — Senior Full Stack Software Engineer based in Kathmandu, Nepal. 7+ years of proven expertise delivering high-performance web applications. CSIT graduate from Tribhuvan University. Currently engineering scalable solutions at Monotype. Deep proficiency in React, Node.js, TypeScript, and Next.js.",
+  description: "Saurav Sitaula — Software Architect based in Kathmandu, Nepal. 7+ years architecting scalable web and mobile applications. CSIT graduate from Tribhuvan University. Currently at Monotype. Expert in React, React Native, Node.js, TypeScript — building solutions across Web, iOS, and Android.",
   keywords: [
     // Name variations - critical for person searches
     "Saurav Sitaula",
@@ -34,22 +34,25 @@ export const metadata = {
     "sitaulasaurav",
     
     // Professional titles
+    "Software Architect",
     "Full Stack Developer",
-    "Software Engineer",
-    "Senior Software Engineer",
-    "Full Stack Engineer",
+    "Full Stack Architect",
+    "Technical Lead",
+    "Engineering Lead",
     "Web Developer",
-    "Frontend Developer",
-    "Backend Developer",
+    "Mobile Developer",
+    "React Native Developer",
     
     // Technical skills
     "React Developer",
+    "React Native Developer Nepal",
     "Node.js Developer",
     "JavaScript Developer",
     "TypeScript Developer",
     "Next.js Developer",
-    "React Expert",
-    "Node.js Expert",
+    "iOS Developer Nepal",
+    "Android Developer Nepal",
+    "Cross Platform Mobile Developer",
     
     // Location-based - Nepal targeting
     "Software Engineer Nepal",
@@ -97,8 +100,8 @@ export const metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Saurav Sitaula - Portfolio",
-    title: "Saurav Sitaula | Senior Full Stack Software Engineer | Nepal",
-    description: "Senior Full Stack Software Engineer with 7+ years of expertise. Architecting robust, scalable web applications using React, Node.js, and TypeScript. Based in Kathmandu, Nepal. Currently at Monotype.",
+    title: "Saurav Sitaula | Software Architect | Web & Mobile Expert | Nepal",
+    description: "Software Architect with 7+ years of expertise. Building scalable web and mobile applications with React, React Native, Node.js. Based in Kathmandu, Nepal. Currently at Monotype.",
     images: [
       {
         url: `${siteUrl}/og-image.png`,
@@ -120,8 +123,8 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Saurav Sitaula | Senior Full Stack Software Engineer | Nepal",
-    description: "7+ years engineering high-impact web solutions. React, Node.js, TypeScript specialist. CSIT graduate from TU. Driving innovation at Monotype.",
+    title: "Saurav Sitaula | Software Architect | Nepal",
+    description: "7+ years architecting web & mobile solutions. React, React Native, Node.js expert. Building products used by millions at Monotype.",
     images: [`${siteUrl}/og-image.png`],
     creator: "@sou_rey",
   },

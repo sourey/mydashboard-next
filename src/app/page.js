@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 
 // Page-specific metadata enhancements
 export const metadata = {
-  title: "Saurav Sitaula | Senior Full Stack Software Engineer | React & Node.js Expert | Nepal",
-  description: "Saurav Sitaula — Senior Full Stack Software Engineer with 7+ years of proven expertise. Architecting high-performance web applications with React, Node.js, TypeScript, and Next.js. Based in Kathmandu, Nepal. Currently driving innovation at Monotype.",
+  title: "Saurav Sitaula | Software Architect | React, React Native & Node.js | Nepal",
+  description: "Saurav Sitaula — Software Architect with 7+ years of expertise. Architecting scalable web and mobile applications with React, React Native, Node.js. Delivering solutions across Web, iOS, and Android. Based in Kathmandu, Nepal.",
   alternates: {
     canonical: "/",
   },
