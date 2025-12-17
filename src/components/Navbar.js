@@ -41,6 +41,7 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-3 items-center">
           <NavLink href="#about" color="bg-neo-lime">About</NavLink>
           <NavLink href="#experience" color="bg-neo-secondary text-white">Experience</NavLink>
+          <NavLink href="#resume" color="bg-neo-blue text-white">Resume</NavLink>
           <NavLink href="#stack" color="bg-neo-accent">Stack</NavLink>
           <NavLink href="#projects" color="bg-neo-purple text-white">Projects</NavLink>
           <NavLink href="/hobbies" color="bg-neo-orange text-white">Hobbies</NavLink>
@@ -75,6 +76,9 @@ export default function Navbar() {
             </MobileNavLink>
             <MobileNavLink href="#experience" onClick={() => setIsOpen(false)} color="bg-neo-secondary text-white">
               <span className="mr-2">💼</span> Experience
+            </MobileNavLink>
+            <MobileNavLink href="#resume" onClick={() => setIsOpen(false)} color="bg-neo-blue text-white">
+              <span className="mr-2">📄</span> Resume
             </MobileNavLink>
             <MobileNavLink href="#stack" onClick={() => setIsOpen(false)} color="bg-neo-accent">
               <span className="mr-2">⚡</span> Tech Stack

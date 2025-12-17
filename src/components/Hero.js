@@ -158,8 +158,20 @@ export default function Hero() {
                 Deep expertise in <span className="font-bold">React, React Native, Node.js, TypeScript</span>, and cloud infrastructure. I architect solutions that handle millions of users — from enterprise font platforms to e-commerce systems and cross-platform mobile applications.
               </p>
 
+              {/* Download CV Button */}
+              <a 
+                href="/cv.pdf" 
+                download="Saurav_Sitaula_CV.pdf"
+                className="neo-button bg-neo-dark text-white inline-flex items-center gap-2 mb-6 hover:bg-neo-primary transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download CV
+              </a>
+
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="grid grid-cols-3 gap-4">
                 <StatBox number="7+" label="Years" color="bg-neo-primary" />
                 <StatBox number="25+" label="Projects" color="bg-neo-secondary" />
                 <StatBox number="3" label="Platforms" color="bg-neo-purple" />
