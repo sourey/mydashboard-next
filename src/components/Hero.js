@@ -53,7 +53,7 @@ export default function Hero() {
   return (
     <section id="about" className="min-h-screen flex flex-col relative" aria-labelledby="hero-name" role="region">
       {/* Worked On Banner */}
-      <div className="bg-neo-dark border-y-4 border-neo-dark py-3 overflow-hidden">
+      {/* <div className="bg-neo-dark border-y-4 border-neo-dark py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap flex">
           {[...Array(3)].map((_, setIndex) => (
             <div key={setIndex} className="flex items-center gap-6 mr-6">
@@ -90,7 +90,7 @@ export default function Hero() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Main Hero Content */}
       <div className="flex-1 max-w-7xl mx-auto px-4 py-12 md:py-20 w-full">
@@ -151,7 +151,7 @@ export default function Hero() {
               </h3>
               
               <p className="text-lg leading-relaxed mb-6 mt-8">
-                I&apos;m a <span className="retro-highlight font-bold">Software Architect</span> with 7+ years of experience designing and delivering scalable systems across web and mobile platforms.
+                I&apos;m a <span className="retro-highlight font-bold">Software Engineer</span> with 7+ years of experience designing and delivering scalable systems across web and mobile platforms.
               </p>
               
               <p className="text-lg leading-relaxed mb-6">

@@ -33,11 +33,13 @@ const projects = [
   },
   {
     name: 'React Trivia',
-    description: 'A React app to play trivia games. Test your knowledge with fun questions!',
+    description: 'A React app to play trivia games. Test your knowledge with fun questions! Play it live now.',
     tags: ['JavaScript', 'React'],
-    link: 'https://github.com/sourey/react-trivia',
+    link: 'https://react-trivia-2b59f.web.app/',
+    featured: true,
     color: 'bg-neo-secondary',
-    emoji: '🧠'
+    emoji: '🧠',
+    isLive: true
   },
   {
     name: 'Kodakgram',

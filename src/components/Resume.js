@@ -23,9 +23,9 @@ export default function Resume() {
             <h2 id="resume-title" className="neo-title text-4xl md:text-5xl lg:text-6xl uppercase mb-4">
               My <span className="text-neo-primary">Curriculum</span> Vitae
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               7+ years of experience architecting scalable solutions. Download my CV to learn more about my professional journey.
-            </p>
+            </p> */}
           </div>
 
           {/* CV Card */}
@@ -46,7 +46,7 @@ export default function Resume() {
                       </div>
                       <div>
                         <h3 className="font-black text-xl uppercase">Saurav Sitaula</h3>
-                        <p className="text-sm text-gray-600 font-bold">Software Architect & Lead</p>
+                        <p className="text-sm text-gray-600 font-bold">Software Engineer & Lead</p>
                       </div>
                     </div>
                     
@@ -93,11 +93,11 @@ export default function Resume() {
                     Get the <span className="text-neo-primary">Full Picture</span>
                   </h3>
                   
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  {/* <p className="text-gray-600 mb-6 leading-relaxed">
                     My CV contains detailed information about my professional experience, 
                     technical skills, education, and the projects I&apos;ve delivered across 
                     web and mobile platforms.
-                  </p>
+                  </p> */}
                   
                   <ul className="space-y-3 mb-8">
                     {[

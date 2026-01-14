@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 
 // Page-specific metadata enhancements
 export const metadata = {
-  title: "Saurav Sitaula | Software Architect | React, React Native & Node.js | Nepal",
-  description: "Saurav Sitaula — Software Architect with 7+ years of expertise. Architecting scalable web and mobile applications with React, React Native, Node.js. Delivering solutions across Web, iOS, and Android. Based in Kathmandu, Nepal.",
+  title: "Saurav Sitaula | Software Engineer | React, React Native & Node.js | Nepal",
+  description: "Saurav Sitaula — Software Engineer with 7+ years of expertise. Architecting scalable web and mobile applications with React, React Native, Node.js. Delivering solutions across Web, iOS, and Android. Based in Kathmandu, Nepal.",
   alternates: {
     canonical: "/",
   },
@@ -35,7 +35,7 @@ export default function Home() {
         <article itemScope itemType="https://schema.org/Person" itemProp="mainEntity">
           {/* Hidden but indexable content for SEO */}
           <meta itemProp="name" content="Saurav Sitaula" />
-          <meta itemProp="jobTitle" content="Senior Full Stack Software Engineer" />
+          <meta itemProp="jobTitle" content="Software Engineer" />
           <meta itemProp="email" content="sitaulasaurav@gmail.com" />
           <meta itemProp="url" content="https://saurav.dev" />
           <link itemProp="sameAs" href="https://github.com/sourey" />
