@@ -1143,6 +1143,300 @@ const recommendations = {
       seasons: '4 seasons',
       image: 'https://image.tmdb.org/t/p/w500/f9zGxLHGyQB10cMDZNY5ZcGKhZi.jpg'
     },
+    // === MYSTERY ===
+    { 
+      title: 'Broadchurch', 
+      year: '2013-2017', 
+      genre: 'Mystery', 
+      rating: '9.1', 
+      emoji: '🌊',
+      description: 'The murder of a young boy tears apart a close-knit coastal town. Gripping British drama.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/5oPzoL70e1TG8NdJYn8V7ikPBGK.jpg'
+    },
+    { 
+      title: 'The Killing', 
+      year: '2011-2014', 
+      genre: 'Mystery', 
+      rating: '9.0', 
+      emoji: '🌧️',
+      description: 'Detectives investigate murders in Seattle. Atmospheric and emotionally devastating.',
+      seasons: '4 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/bYPl85UHWBQC4VqZI0q5TBHj1aT.jpg'
+    },
+    { 
+      title: 'Twin Peaks', 
+      year: '1990-2017', 
+      genre: 'Mystery', 
+      rating: '9.2', 
+      emoji: '🦉',
+      description: 'Who killed Laura Palmer? David Lynch\'s surreal murder mystery that changed TV forever.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/hX6wwMISw6eeEtX8YVDJ0TuV5lK.jpg'
+    },
+    { 
+      title: 'The Sinner', 
+      year: '2017-2021', 
+      genre: 'Mystery', 
+      rating: '8.8', 
+      emoji: '😱',
+      description: 'Anthology series exploring why ordinary people commit brutal crimes.',
+      seasons: '4 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/wLqpCfcf4z27qPMTCBYzP2rPL9I.jpg'
+    },
+    { 
+      title: 'The Missing', 
+      year: '2014-2016', 
+      genre: 'Mystery', 
+      rating: '8.9', 
+      emoji: '👦',
+      description: 'A detective investigates the disappearance of children across Europe. Haunting and complex.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/zGu1cJ2e3c8ePrVNRJoAAg9VroS.jpg'
+    },
+    // === TRUE CRIME ===
+    { 
+      title: 'Making a Murderer', 
+      year: '2015-2018', 
+      genre: 'True Crime', 
+      rating: '9.0', 
+      emoji: '⚖️',
+      description: 'The story of Steven Avery, wrongfully convicted, then accused of murder. Infuriating true crime.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/3Y77A9i4Cm8RI4cTPHGDclE8Ixn.jpg'
+    },
+    { 
+      title: 'The Staircase', 
+      year: '2004-2018', 
+      genre: 'True Crime', 
+      rating: '8.9', 
+      emoji: '🪜',
+      description: 'Did Michael Peterson kill his wife? A true crime documentary that spans over a decade.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/7L6gXV8nQkLBGjwfIjUIPBz7b0d.jpg'
+    },
+    { 
+      title: 'American Crime Story', 
+      year: '2016-', 
+      genre: 'True Crime', 
+      rating: '9.1', 
+      emoji: '🏛️',
+      description: 'Anthology dramatizing infamous crimes. OJ Simpson and Versace seasons are exceptional.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/lqmvgIWOEbkv7LuGnSpE9sQBTpB.jpg'
+    },
+    { 
+      title: 'Monster: The Jeffrey Dahmer Story', 
+      year: '2022', 
+      genre: 'True Crime', 
+      rating: '8.8', 
+      emoji: '🚨',
+      description: 'The chilling true story of serial killer Jeffrey Dahmer. Evan Peters delivers a haunting performance.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/f2PVrphK0u81ES256lw3oAZuF3x.jpg'
+    },
+    { 
+      title: 'The Jinx', 
+      year: '2015', 
+      genre: 'True Crime', 
+      rating: '9.2', 
+      emoji: '💀',
+      description: 'Robert Durst agrees to an interview about the deaths connected to him. Jaw-dropping ending.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/aKuUYYtMIqORqCvgKMUEVMUWxnS.jpg'
+    },
+    { 
+      title: 'Wild Wild Country', 
+      year: '2018', 
+      genre: 'True Crime', 
+      rating: '9.0', 
+      emoji: '🧘',
+      description: 'The Rajneesh cult moves to Oregon and things spiral out of control. Unbelievable true story.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/8LDZ1dLBluM0l0pOi3XnPPP8wZm.jpg'
+    },
+    // === HISTORY ===
+    { 
+      title: 'Band of Brothers', 
+      year: '2001', 
+      genre: 'History', 
+      rating: '9.8', 
+      emoji: '🎖️',
+      description: 'The story of Easy Company, 506th Regiment. The greatest war miniseries ever made.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/bFtsU3LhkeAC0tjEYflq4HU2SW2.jpg'
+    },
+    { 
+      title: 'The Pacific', 
+      year: '2010', 
+      genre: 'History', 
+      rating: '9.3', 
+      emoji: '🏝️',
+      description: 'The Pacific Theater of WWII through the eyes of three Marines. Companion to Band of Brothers.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/x5rBdFDBdRNitkZlSCcHfbEv0M4.jpg'
+    },
+    { 
+      title: 'Chernobyl', 
+      year: '2019', 
+      genre: 'History', 
+      rating: '9.7', 
+      emoji: '☢️',
+      description: 'The true story of the 1986 nuclear disaster. Absolutely terrifying and brilliantly made.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg'
+    },
+    { 
+      title: 'The Crown', 
+      year: '2016-2023', 
+      genre: 'History', 
+      rating: '9.1', 
+      emoji: '👑',
+      description: 'The reign of Queen Elizabeth II from her wedding to the present day. Lavish and compelling.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/1M876KPjulVwppEpldhdc8V4o68.jpg'
+    },
+    { 
+      title: 'Vikings', 
+      year: '2013-2020', 
+      genre: 'History', 
+      rating: '9.0', 
+      emoji: '⚔️',
+      description: 'The saga of Ragnar Lothbrok and his sons. Epic battles and Norse mythology.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/bQLrHIRNEkE3PdIWQrZHynQZazu.jpg'
+    },
+    { 
+      title: 'Rome', 
+      year: '2005-2007', 
+      genre: 'History', 
+      rating: '9.2', 
+      emoji: '🏛️',
+      description: 'The fall of the Roman Republic through the eyes of two soldiers. HBO\'s underrated gem.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/fH6pJT3WBiMi9kWXg3Bi8w5X5y.jpg'
+    },
+    // === MORE CRIME & THRILLER ===
+    { 
+      title: 'Line of Duty', 
+      year: '2012-2021', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '👮',
+      description: 'Anti-corruption unit investigates bent coppers. Britain\'s most-watched drama.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/zO5DqMjfiHcRwJRZNdPV0K5sYl2.jpg'
+    },
+    { 
+      title: 'The Americans', 
+      year: '2013-2018', 
+      genre: 'Thriller', 
+      rating: '9.4', 
+      emoji: '🕵️',
+      description: 'Soviet spies pose as an American family during the Cold War. Tension in every episode.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/tvmhCuZzQDzYlZy0ErzouUqArMW.jpg'
+    },
+    { 
+      title: 'Homeland', 
+      year: '2011-2020', 
+      genre: 'Thriller', 
+      rating: '9.0', 
+      emoji: '🇺🇸',
+      description: 'A CIA officer believes a rescued POW has been turned by al-Qaeda. Gripping political thriller.',
+      seasons: '8 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/6GAvS41Yw3X3cDgI3g1TYJbGdUq.jpg'
+    },
+    { 
+      title: 'Bodyguard', 
+      year: '2018', 
+      genre: 'Thriller', 
+      rating: '9.1', 
+      emoji: '🛡️',
+      description: 'A war veteran is assigned to protect the Home Secretary. Non-stop tension.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/rVKR5vSHDnVVS1joHg12BhN2WfT.jpg'
+    },
+    { 
+      title: 'Luther', 
+      year: '2010-2019', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '🔦',
+      description: 'A brilliant but troubled detective hunts serial killers in London. Idris Elba at his best.',
+      seasons: '5 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/eFZzC8WnuAhFMJbhGdBc0nP4SjO.jpg'
+    },
+    { 
+      title: 'Black Mirror', 
+      year: '2011-', 
+      genre: 'Thriller', 
+      rating: '9.2', 
+      emoji: '📱',
+      description: 'An anthology exploring the dark side of technology. Modern-day Twilight Zone.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/5UaYsGZOFhjFDwQh6GuLjjA1WlF.jpg'
+    },
+    { 
+      title: 'Gomorrah', 
+      year: '2014-2021', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '🇮🇹',
+      description: 'The brutal world of the Camorra crime syndicate in Naples. Italian crime at its finest.',
+      seasons: '5 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/pNDZrIVZRdXeuxW4V1vLKO1PBpK.jpg'
+    },
+    { 
+      title: 'Top Boy', 
+      year: '2011-2023', 
+      genre: 'Crime Thriller', 
+      rating: '8.9', 
+      emoji: '🏚️',
+      description: 'Drug dealers navigate life on a London housing estate. Raw and uncompromising.',
+      seasons: '5 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/u2uy6w8hYyU6OtQNJAomKzQA1j0.jpg'
+    },
+    { 
+      title: 'Severance', 
+      year: '2022-', 
+      genre: 'Sci-Fi', 
+      rating: '9.4', 
+      emoji: '🧠',
+      description: 'Employees undergo a procedure to separate work memories from personal life. Mind-bending corporate thriller.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/lFf6DEhcAKlkHJgeoaDmKqzNND3.jpg'
+    },
+    { 
+      title: 'Rick and Morty', 
+      year: '2013-', 
+      genre: 'Anime', 
+      rating: '9.3', 
+      emoji: '🛸',
+      description: 'A genius scientist drags his grandson on insane interdimensional adventures. Brilliant and chaotic.',
+      seasons: '7 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/gdIrmf2DdY5mgN6ycVP0XlzKzbE.jpg'
+    },
+    { 
+      title: 'Common Side Effects', 
+      year: '2024', 
+      genre: 'Drama', 
+      rating: '8.5', 
+      emoji: '💊',
+      description: 'A dark comedy-drama exploring the pharmaceutical industry and its impact on everyday lives.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/mYFydqMlQnWxBVPGFjZxVe0bMvW.jpg'
+    },
+    { 
+      title: 'Silo', 
+      year: '2023-', 
+      genre: 'Sci-Fi', 
+      rating: '9.1', 
+      emoji: '🏭',
+      description: 'In a ruined future, thousands live in a giant underground silo. What lies outside?',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/2asxXjb7j5FfrM9R0iiPf1C1e9q.jpg'
+    },
   ],
   books: [
     { 
@@ -1335,7 +1629,7 @@ export default function Recommendations() {
                 )}
                 
                 {/* Genre badge */}
-                <div className={`absolute top-2 left-2 neo-tag ${currentTab.color} text-white text-xs`}>
+                <div className={`absolute top-2 left-2 neo-tag ${currentTab.color} text-neo-dark text-xs`}>
                   {item.genre}
                 </div>
               </div>
