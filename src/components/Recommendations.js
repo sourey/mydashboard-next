@@ -1256,7 +1256,7 @@ export default function Recommendations() {
     : recommendations[activeTab].filter(item => item.genre === filter);
 
   return (
-    <section className="py-16 md:py-24 relative">
+    <section className="py-8 relative">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -1378,7 +1378,7 @@ export default function Recommendations() {
           {tabConfig.map((tab) => (
             <div 
               key={tab.id}
-              className={`neo-box p-4 text-center ${activeTab === tab.id ? tab.color + ' text-white' : 'bg-white'} transition-colors`}
+              className={`neo-box p-4 text-center ${activeTab === tab.id ? tab.color + ' ' : 'bg-white'} transition-colors`}
             >
               <span className="text-3xl block mb-2">{tab.emoji}</span>
               <span className="text-3xl font-black block">{recommendations[tab.id].length}</span>

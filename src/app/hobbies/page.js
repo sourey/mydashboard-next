@@ -132,7 +132,8 @@ export default function HobbiesPage() {
           </section>
 
           {/* Instagram Gallery Section */}
-          <InstagramGallery />
+          {/* <InstagramGallery /> */}
+          
 
           {/* Recommendations Section */}
           <Recommendations />
