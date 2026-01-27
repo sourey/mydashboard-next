@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-neo-dark text-white relative overflow-hidden" aria-labelledby="contact-title" itemScope itemType="https://schema.org/Person">
       {/* Top Marquee */}
-      <div className="bg-neo-primary border-y-4 border-neo-dark py-3 overflow-hidden">
+      <div className="bg-neo-primary border-y-4 border-neo-border py-3 overflow-hidden">
         <div className="animate-marquee whitespace-nowrap flex">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="flex items-center gap-8 mr-8">
@@ -48,8 +48,8 @@ export default function Footer() {
           </div>
 
           {/* Right: Social Links */}
-          <div className="neo-box p-8 bg-white text-neo-dark">
-            <h3 className="text-2xl font-black uppercase mb-6">Find Me Online</h3>
+          <div className="neo-box p-8">
+            <h3 className="text-2xl font-black uppercase mb-6 text-text-primary">Find Me Online</h3>
             
             <div className="grid grid-cols-2 gap-4">
               <SocialCard 
@@ -90,7 +90,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t-4 border-neo-dark bg-neo-bg text-neo-dark">
+      <div className="border-t-4 border-neo-border bg-neo-bg text-text-primary">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Logo */}
@@ -109,10 +109,10 @@ export default function Footer() {
 
             {/* Decorative */}
             <div className="flex gap-2">
-              <div className="w-4 h-4 bg-neo-primary border-2 border-neo-dark" />
-              <div className="w-4 h-4 bg-neo-accent border-2 border-neo-dark" />
-              <div className="w-4 h-4 bg-neo-secondary border-2 border-neo-dark" />
-              <div className="w-4 h-4 bg-neo-purple border-2 border-neo-dark" />
+              <div className="w-4 h-4 bg-neo-primary border-2 border-neo-border" />
+              <div className="w-4 h-4 bg-neo-accent border-2 border-neo-border" />
+              <div className="w-4 h-4 bg-neo-secondary border-2 border-neo-border" />
+              <div className="w-4 h-4 bg-neo-purple border-2 border-neo-border" />
             </div>
           </div>
         </div>
@@ -139,13 +139,13 @@ function SocialCard({ href, icon, label, color, description, itemProp }) {
       <div className={`absolute inset-0 ${color} transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-center`} />
       
       <div className="relative z-10 flex flex-col items-center text-center">
-        <div className="text-3xl mb-2 group-hover:text-white transition-colors group-hover:scale-110 transform">
+        <div className="text-3xl mb-2 group-hover:text-white transition-colors group-hover:scale-110 transform text-text-primary">
           {icon}
         </div>
-        <span className="font-black uppercase text-sm group-hover:text-white transition-colors">
+        <span className="font-black uppercase text-sm group-hover:text-white transition-colors text-text-primary">
           {label}
         </span>
-        <span className="text-xs text-gray-500 group-hover:text-white/70 transition-colors">
+        <span className="text-xs text-text-muted group-hover:text-white/70 transition-colors">
           {description}
         </span>
       </div>

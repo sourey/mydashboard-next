@@ -20,7 +20,7 @@ export default function Resume() {
           {/* Section Header */}
           <div className="text-center mb-12">
             <span className="neo-tag bg-neo-lime text-neo-dark mb-4 inline-block">Resume</span>
-            <h2 id="resume-title" className="neo-title text-4xl md:text-5xl lg:text-6xl uppercase mb-4">
+            <h2 id="resume-title" className="neo-title text-4xl md:text-5xl lg:text-6xl uppercase mb-4 text-text-primary">
               My <span className="text-neo-primary">Curriculum</span> Vitae
             </h2>
             {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ export default function Resume() {
           </div>
 
           {/* CV Card */}
-          <div className="neo-box bg-white p-8 md:p-12 relative overflow-hidden max-w-4xl mx-auto">
+          <div className="neo-box p-8 md:p-12 relative overflow-hidden max-w-4xl mx-auto">
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-neo-accent opacity-10 transform rotate-45 translate-x-16 -translate-y-16" />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-neo-primary opacity-10 transform -rotate-12 -translate-x-8 translate-y-8" />
@@ -40,13 +40,13 @@ export default function Resume() {
                 <div className="relative group">
                   <div className="neo-box bg-neo-bg p-6 relative overflow-hidden">
                     {/* Document Header */}
-                    <div className="flex items-center gap-4 mb-6 pb-4 border-b-4 border-neo-dark">
-                      <div className="w-16 h-16 bg-neo-dark rounded-lg flex items-center justify-center">
+                    <div className="flex items-center gap-4 mb-6 pb-4 border-b-4 border-neo-border">
+                      <div className="w-16 h-16 bg-neo-primary rounded-lg flex items-center justify-center">
                         <span className="text-2xl font-black text-white">SS</span>
                       </div>
                       <div>
-                        <h3 className="font-black text-xl uppercase">Saurav Sitaula</h3>
-                        <p className="text-sm text-gray-600 font-bold">Software Engineer & Lead</p>
+                        <h3 className="font-black text-xl uppercase text-text-primary">Saurav Sitaula</h3>
+                        <p className="text-sm text-text-muted font-bold">Software Engineer & Lead</p>
                       </div>
                     </div>
                     
@@ -55,7 +55,7 @@ export default function Resume() {
                       <div>
                         <h4 className="text-xs font-black uppercase text-neo-primary mb-2">Experience</h4>
                         <div className="flex gap-2 flex-wrap">
-                          <span className="text-xs bg-neo-dark text-white px-2 py-1 rounded font-bold">Monotype</span>
+                          <span className="text-xs bg-neo-primary text-white px-2 py-1 rounded font-bold">Monotype</span>
                           <span className="text-xs bg-neo-secondary text-white px-2 py-1 rounded font-bold">Techart</span>
                         </div>
                       </div>
@@ -64,7 +64,7 @@ export default function Resume() {
                         <h4 className="text-xs font-black uppercase text-neo-primary mb-2">Skills</h4>
                         <div className="flex gap-1 flex-wrap">
                           {['React', 'Node.js', 'TypeScript', 'React Native'].map(skill => (
-                            <span key={skill} className="text-[10px] bg-neo-accent/20 text-neo-dark px-2 py-0.5 rounded font-bold">
+                            <span key={skill} className="text-[10px] bg-neo-accent/30 text-text-primary px-2 py-0.5 rounded font-bold">
                               {skill}
                             </span>
                           ))}
@@ -73,13 +73,8 @@ export default function Resume() {
                       
                       <div>
                         <h4 className="text-xs font-black uppercase text-neo-primary mb-2">Education</h4>
-                        <p className="text-xs text-gray-600">BSc. CSIT — Tribhuvan University</p>
+                        <p className="text-xs text-text-muted">BSc. CSIT — Tribhuvan University</p>
                       </div>
-                    </div>
-                    
-                    {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-neo-dark/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-white font-black uppercase text-sm">Click to Download</span>
                     </div>
                   </div>
                   
@@ -89,7 +84,7 @@ export default function Resume() {
 
                 {/* Right: Download Info */}
                 <div className="text-center md:text-left">
-                  <h3 className="text-2xl md:text-3xl font-black uppercase mb-4">
+                  <h3 className="text-2xl md:text-3xl font-black uppercase mb-4 text-text-primary">
                     Get the <span className="text-neo-primary">Full Picture</span>
                   </h3>
                   
@@ -107,12 +102,12 @@ export default function Resume() {
                       'Enterprise-scale solutions',
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-center gap-3">
-                        <span className="w-6 h-6 bg-neo-lime border-2 border-neo-dark flex items-center justify-center flex-shrink-0">
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span className="w-6 h-6 bg-neo-lime border-2 border-neo-border flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-neo-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </span>
-                        <span className="font-bold text-sm">{item}</span>
+                        <span className="font-bold text-sm text-text-primary">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -155,10 +150,10 @@ export default function Resume() {
               { label: 'Pages', value: '2 Pages', icon: '📑' },
               { label: 'Language', value: 'English', icon: '🌐' },
             ].map((fact, idx) => (
-              <div key={idx} className="neo-box bg-white p-4 text-center">
+              <div key={idx} className="neo-box p-4 text-center">
                 <span className="text-2xl mb-2 block">{fact.icon}</span>
-                <div className="font-black text-lg">{fact.value}</div>
-                <div className="text-xs text-gray-500 uppercase tracking-wider">{fact.label}</div>
+                <div className="font-black text-lg text-text-primary">{fact.value}</div>
+                <div className="text-xs text-text-muted uppercase tracking-wider">{fact.label}</div>
               </div>
             ))}
           </div>

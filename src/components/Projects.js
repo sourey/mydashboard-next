@@ -86,15 +86,15 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 relative" ref={sectionRef} aria-labelledby="projects-title" itemScope itemType="https://schema.org/ItemList">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-neo-lime opacity-20 border-4 border-neo-dark transform rotate-12 translate-x-32 -translate-y-16" />
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-neo-purple opacity-20 border-4 border-neo-dark transform -rotate-12 -translate-x-24 translate-y-16" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-neo-lime opacity-20 border-4 border-neo-border transform rotate-12 translate-x-32 -translate-y-16" />
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-neo-purple opacity-20 border-4 border-neo-border transform -rotate-12 -translate-x-24 translate-y-16" />
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section Title */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">
           <div>
             <span className="neo-tag bg-neo-purple text-white mb-4 inline-block">Portfolio</span>
-            <h2 id="projects-title" className="neo-title text-4xl md:text-6xl lg:text-7xl uppercase">
+            <h2 id="projects-title" className="neo-title text-4xl md:text-6xl lg:text-7xl uppercase text-text-primary">
               Selected<br />
               <span className="text-neo-primary">Projects</span>
             </h2>
@@ -127,17 +127,17 @@ export default function Projects() {
               
               <div className="relative z-10">
                 {/* Featured badge */}
-                <div className="absolute -top-2 -right-2 bg-neo-accent border-4 border-neo-dark px-3 py-1 font-black text-xs uppercase rotate-3">
+                <div className="absolute -top-2 -right-2 bg-neo-accent border-4 border-neo-border px-3 py-1 font-black text-xs uppercase rotate-3 text-neo-dark">
                   {project.isLive ? '🔴 LIVE DEMO' : '⭐ Featured'}
                 </div>
 
                 <span className="text-5xl mb-4 block">{project.emoji}</span>
                 
-                <h3 className="text-3xl md:text-4xl font-black uppercase mb-4 group-hover:text-white transition-colors">
+                <h3 className="text-3xl md:text-4xl font-black uppercase mb-4 group-hover:text-white transition-colors text-text-primary">
                   {project.name}
                 </h3>
                 
-                <p className="text-lg mb-6 group-hover:text-white/90 transition-colors leading-relaxed">
+                <p className="text-lg mb-6 group-hover:text-white/90 transition-colors leading-relaxed text-text-secondary">
                   {project.description}
                 </p>
                 
@@ -152,7 +152,7 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-2 font-black uppercase text-sm group-hover:text-white transition-colors">
+                <div className="flex items-center gap-2 font-black uppercase text-sm group-hover:text-white transition-colors text-text-primary">
                   {project.isLive ? 'Play Now' : 'View Project'}
                   <span className="transform group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform text-xl">↗</span>
                 </div>
@@ -169,21 +169,21 @@ export default function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`neo-box p-6 group hover:bg-neo-dark transition-all duration-300 hover:-translate-y-2 hover:shadow-neo-lg ${
+              className={`neo-box p-6 group hover:bg-neo-primary transition-all duration-300 hover:-translate-y-2 hover:shadow-neo-lg ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${(idx + 2) * 100}ms` }}
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="text-3xl">{project.emoji}</span>
-                <span className={`w-4 h-4 ${project.color} border-2 border-neo-dark rotate-45`} />
+                <span className={`w-4 h-4 ${project.color} border-2 border-neo-border rotate-45`} />
               </div>
               
-              <h3 className="text-xl font-black uppercase mb-2 group-hover:text-neo-accent transition-colors">
+              <h3 className="text-xl font-black uppercase mb-2 group-hover:text-white transition-colors text-text-primary">
                 {project.name}
               </h3>
               
-              <p className="text-sm mb-4 group-hover:text-white/80 transition-colors line-clamp-2">
+              <p className="text-sm mb-4 group-hover:text-white/80 transition-colors line-clamp-2 text-text-secondary">
                 {project.description}
               </p>
               
@@ -191,7 +191,7 @@ export default function Projects() {
                 {project.tags.slice(0, 2).map(tag => (
                   <span 
                     key={tag} 
-                    className="text-xs font-bold border-2 border-neo-dark px-2 py-1 bg-white text-neo-dark group-hover:border-white transition-colors"
+                    className="text-xs font-bold border-2 border-neo-border px-2 py-1 bg-card-bg text-text-primary group-hover:border-white group-hover:text-white transition-colors"
                   >
                     {tag}
                   </span>
@@ -199,22 +199,6 @@ export default function Projects() {
               </div>
             </a>
           ))}
-        </div>
-
-        {/* Call to action */}
-        <div className="mt-16 neo-box p-8 md:p-12 bg-neo-lime text-center relative overflow-hidden">
-          <div className="absolute inset-0 striped-bg opacity-20" />
-          <div className="relative z-10">
-            <h3 className="neo-title text-3xl md:text-4xl uppercase mb-4">
-              Interested in working together?
-            </h3>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
-              Ready to discuss challenging projects, innovative solutions, or strategic opportunities where I can drive real impact.
-            </p>
-            <a href="#contact" className="neo-button bg-neo-dark text-white inline-block">
-              Let&apos;s Talk →
-            </a>
-          </div>
         </div>
       </div>
     </section>

@@ -102,8 +102,8 @@ export default function Hero() {
             </div>
             
             <h1 id="hero-name" className="neo-title text-6xl md:text-7xl lg:text-8xl xl:text-9xl uppercase leading-[0.85] mb-6">
-              <span className="block" itemProp="givenName">Saurav</span>
-              <span className="block text-transparent" style={{ WebkitTextStroke: '3px #0A0A0A' }} itemProp="familyName">Sitaula</span>
+              <span className="block text-text-primary" itemProp="givenName">Saurav</span>
+              <span className="block text-transparent stroke-text" itemProp="familyName">Sitaula</span>
             </h1>
             
             {/* <div className="flex flex-wrap gap-3 mb-8">
@@ -140,21 +140,21 @@ export default function Hero() {
 
           {/* Right: About Card */}
           <div className={`transition-all duration-700 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="neo-box p-6 md:p-8 bg-white relative">
+            <div className="neo-box p-6 md:p-8 relative">
               {/* Decorative corner */}
-              <div className="absolute -top-3 -right-3 w-16 h-16 bg-neo-accent border-4 border-neo-dark flex items-center justify-center">
+              <div className="absolute -top-3 -right-3 w-16 h-16 bg-neo-accent border-4 border-neo-border flex items-center justify-center">
                 <span className="text-2xl animate-bounce-slow">👋</span>
               </div>
               
-              <h3 className="text-2xl md:text-3xl font-black uppercase mb-4 section-title-underline">
+              <h3 className="text-2xl md:text-3xl font-black uppercase mb-4 section-title-underline text-text-primary">
                 About Me
               </h3>
               
-              <p className="text-lg leading-relaxed mb-6 mt-8">
+              <p className="text-lg leading-relaxed mb-6 mt-8 text-text-primary">
                 I&apos;m a <span className="retro-highlight font-bold">Software Engineer</span> with 7+ years of experience designing and delivering scalable systems across web and mobile platforms.
               </p>
               
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6 text-text-primary">
                 Deep expertise in <span className="font-bold">React, React Native, Node.js, TypeScript</span>, and cloud infrastructure. I architect solutions that handle millions of users — from enterprise font platforms to e-commerce systems and cross-platform mobile applications.
               </p>
 
@@ -182,11 +182,11 @@ export default function Hero() {
 
         {/* Worked On Section - Enhanced */}
         <div className={`mt-16 transition-all duration-700 delay-300 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="neo-box p-6 md:p-8 bg-white relative overflow-hidden">
+          <div className="neo-box p-6 md:p-8 relative overflow-hidden">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
               <div>
                 <span className="neo-tag bg-neo-primary text-white mb-2 inline-block">Portfolio</span>
-                <h3 className="text-2xl font-black uppercase">
+                <h3 className="text-2xl font-black uppercase text-text-primary">
                   Products <span className="text-neo-primary">Shipped</span>
                 </h3>
               </div>
@@ -215,17 +215,17 @@ export default function Hero() {
                   <div className="relative z-10">
                     {/* Logo placeholder */}
                     <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-black mb-3 shadow-neo border-2 border-neo-dark"
+                      className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-black mb-3 shadow-neo border-2 border-neo-border"
                       style={{ backgroundColor: site.color }}
                     >
                       {site.name.charAt(0)}
                     </div>
                     
-                    <h4 className="font-black text-sm uppercase mb-1 group-hover:text-neo-primary transition-colors leading-tight">
+                    <h4 className="font-black text-sm uppercase mb-1 group-hover:text-neo-primary transition-colors leading-tight text-text-primary">
                       {site.name}
                     </h4>
                     
-                    <p className="text-[11px] text-gray-500 mb-2 line-clamp-1">
+                    <p className="text-[11px] text-text-muted mb-2 line-clamp-1">
                       {site.description}
                     </p>
 
@@ -233,16 +233,16 @@ export default function Hero() {
                     <div className="flex flex-wrap gap-1 mb-2">
                       {site.hasMobile ? (
                         <>
-                          <span className="text-[9px] bg-neo-dark text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
+                          <span className="text-[9px] bg-neo-primary text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
                           <span className="text-[9px] bg-neo-purple text-white px-1.5 py-0.5 rounded font-bold">iOS</span>
                           <span className="text-[9px] bg-neo-lime text-neo-dark px-1.5 py-0.5 rounded font-bold">Android</span>
                         </>
                       ) : (
-                        <span className="text-[9px] bg-neo-dark text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
+                        <span className="text-[9px] bg-neo-primary text-white px-1.5 py-0.5 rounded font-bold">WEB</span>
                       )}
                     </div>
                     
-                    <div className="flex items-center gap-1 text-[10px] font-bold uppercase text-gray-400 group-hover:text-neo-dark transition-colors">
+                    <div className="flex items-center gap-1 text-[10px] font-bold uppercase text-text-muted group-hover:text-neo-primary transition-colors">
                       Visit <span className="transform group-hover:translate-x-1 transition-transform">↗</span>
                     </div>
                   </div>

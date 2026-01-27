@@ -77,7 +77,7 @@ export default function TechStack() {
         }}
       />
 
-      <div className="bg-neo-secondary pt-8 pb-20 border-y-4 border-neo-dark relative">
+      <div className="bg-neo-secondary pt-8 pb-20 border-y-4 border-neo-border relative">
         {/* Cross pattern overlay */}
         <div className="absolute inset-0 cross-pattern opacity-5" />
 
@@ -86,7 +86,7 @@ export default function TechStack() {
           <div className="flex justify-center mb-16">
             <div className="relative">
               <div className="absolute -inset-2 bg-neo-dark transform rotate-2" />
-              <h2 className="relative neo-title text-4xl md:text-6xl lg:text-7xl uppercase text-center bg-white border-4 border-neo-dark shadow-neo-lg p-4 md:p-6 transform -rotate-1">
+              <h2 className="relative neo-title text-4xl md:text-6xl lg:text-7xl uppercase text-center bg-card-bg text-text-primary border-4 border-neo-border shadow-neo-lg p-4 md:p-6 transform -rotate-1">
                 <span className="text-neo-primary">Tech</span> Stack
               </h2>
             </div>
@@ -121,7 +121,7 @@ export default function TechStack() {
                   {data.items.map((tech, techIdx) => (
                     <span
                       key={tech}
-                      className="bg-white text-neo-dark border-3 border-neo-dark px-3 py-2 font-bold text-sm shadow-[3px_3px_0px_0px_#0A0A0A] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_0px_#0A0A0A] transition-all cursor-default"
+                      className="bg-card-bg text-text-primary border-3 border-neo-border px-3 py-2 font-bold text-sm shadow-neo-sm hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all cursor-default"
                       style={{ animationDelay: `${techIdx * 50}ms` }}
                     >
                       {tech}

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 // Fallback image for broken images
-const FALLBACK_IMAGE = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600"%3E%3Crect fill="%231a1a1a" width="400" height="600"/%3E%3Ctext fill="%23FFE500" font-family="system-ui" font-size="48" font-weight="bold" text-anchor="middle" x="200" y="280"%3E🎬%3C/text%3E%3Ctext fill="%23ffffff" font-family="system-ui" font-size="16" font-weight="bold" text-anchor="middle" x="200" y="340"%3ENo Image%3C/text%3E%3C/svg%3E';
+const FALLBACK_IMAGE = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600"%3E%3Crect fill="%231a1a1a" width="400" height="600"/%3E%3Ctext fill="%23FFE500" font-family="system-ui" font-size="48" font-weight="bold" text-anchor="middle" x="200" y="280"%3E🎬%3C/text%3E%3Ctext fill="%23ffffff" font-family="system-ui" font-size="16" font-weight="bold" text-anchor="middle" x="200" y="340"%3E%3C/text%3E%3C/svg%3E';
 
 // ============================================
 // 🎬📺📚 YOUR RECOMMENDATIONS
@@ -1554,25 +1554,29 @@ export default function Recommendations() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="neo-tag bg-neo-lime mb-4 inline-block">⭐ Curated List</span>
-          <h2 className="neo-title text-4xl md:text-5xl lg:text-6xl uppercase mb-4">
+          <h2 className="neo-title text-4xl md:text-5xl lg:text-6xl uppercase mb-4 text-text-primary">
             My <span className="text-neo-primary">Recommendations</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
             A collection of movies, series, anime, and books that have shaped my thinking.
           </p>
+
         </div>
 
         {/* Tabs */}
+        <div className="text-center mb-4">
+        <span className="neo-tag bg-neo-lime text-black inline-block">⭐ Curated List</span>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           {tabConfig.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-8 py-4 font-black text-lg uppercase tracking-wider border-4 border-neo-dark transition-all duration-200 ${
+              className={`px-8 py-4 font-black text-lg uppercase tracking-wider border-4 border-neo-border transition-all duration-200 ${
                 activeTab === tab.id
                   ? `${tab.color} text-white shadow-none translate-x-1 translate-y-1`
-                  : 'bg-white shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px]'
+                  : 'bg-card-bg text-text-primary shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px]'
               }`}
             >
               <span className="mr-2 text-2xl">{tab.emoji}</span>
@@ -1588,10 +1592,10 @@ export default function Recommendations() {
             <button
               key={genre}
               onClick={() => setFilter(genre)}
-              className={`px-4 py-2 text-sm font-bold uppercase border-2 border-neo-dark transition-all ${
+              className={`px-4 py-2 text-sm font-bold uppercase border-2 border-neo-border transition-all ${
                 filter === genre
-                  ? 'bg-neo-dark text-white'
-                  : 'bg-white hover:bg-neo-bg'
+                  ? 'bg-neo-primary text-white'
+                  : 'bg-card-bg text-text-primary hover:bg-neo-accent hover:text-black'
               }`}
             >
               {genre === 'all' ? '🌟 All' : genre}
@@ -1610,7 +1614,7 @@ export default function Recommendations() {
               style={{ transitionDelay: `${Math.min(idx * 30, 300)}ms` }}
             >
               {/* Thumbnail Image with Fallback */}
-              <div className="relative h-64 overflow-hidden border-b-4 border-neo-dark bg-neo-dark">
+              <div className="relative h-64 overflow-hidden border-b-4 border-neo-border bg-neo-dark">
                 <ImageWithFallback
                   src={item.image || FALLBACK_IMAGE}
                   alt={item.title}
@@ -1640,10 +1644,10 @@ export default function Recommendations() {
                 <div className="flex items-start gap-3 mb-2">
                   <span className="text-3xl">{item.emoji}</span>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-black uppercase leading-tight group-hover:text-neo-primary transition-colors truncate">
+                    <h3 className="text-lg font-black uppercase leading-tight group-hover:text-neo-primary transition-colors truncate text-text-primary">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-gray-500 font-mono truncate">
+                    <p className="text-xs text-text-muted font-mono truncate">
                       {item.author || item.director || item.year}
                       {item.seasons && ` • ${item.seasons}`}
                     </p>
@@ -1651,7 +1655,7 @@ export default function Recommendations() {
                 </div>
                 
                 {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
+                <p className="text-text-secondary text-sm leading-relaxed line-clamp-2">
                   {item.description}
                 </p>
               </div>
@@ -1663,7 +1667,7 @@ export default function Recommendations() {
         {filteredItems.length === 0 && (
           <div className="neo-box p-12 text-center">
             <span className="text-6xl block mb-4">🔍</span>
-            <p className="text-xl font-bold">No items found for this filter</p>
+            <p className="text-xl font-bold text-text-primary">No items found for this filter</p>
           </div>
         )}
 
@@ -1672,11 +1676,11 @@ export default function Recommendations() {
           {tabConfig.map((tab) => (
             <div 
               key={tab.id}
-              className={`neo-box p-4 text-center ${activeTab === tab.id ? tab.color + ' ' : 'bg-white'} transition-colors`}
+              className={`neo-box p-4 text-center ${activeTab === tab.id ? tab.color + ' text-white' : ''} transition-colors`}
             >
               <span className="text-3xl block mb-2">{tab.emoji}</span>
-              <span className="text-3xl font-black block">{recommendations[tab.id].length}</span>
-              <span className="text-xs uppercase tracking-wider opacity-70">{tab.label}</span>
+              <span className={`text-3xl font-black block ${activeTab === tab.id ? 'text-white' : 'text-text-primary'}`}>{recommendations[tab.id].length}</span>
+              <span className={`text-xs uppercase tracking-wider ${activeTab === tab.id ? 'text-white/70' : 'text-text-muted'}`}>{tab.label}</span>
             </div>
           ))}
         </div>

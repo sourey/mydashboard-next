@@ -104,27 +104,27 @@ export default function Experience() {
                 <div className={`flex-1 ${idx % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
                   <div className="neo-box p-6 md:p-8 relative group hover:-translate-y-2 hover:shadow-neo-xl transition-all duration-300">
                     {/* Period Badge */}
-                    <div className={`absolute -top-4 ${idx % 2 === 0 ? '-right-2 md:-right-4' : '-right-2 md:-left-4'} ${exp.color} text-white px-4 py-2 border-4 border-neo-dark font-black text-sm shadow-neo transform rotate-2`}>
+                    <div className={`absolute -top-4 ${idx % 2 === 0 ? '-right-2 md:-right-4' : '-right-2 md:-left-4'} ${exp.color} text-white px-4 py-2 border-4 border-neo-border font-black text-sm shadow-neo transform rotate-2`}>
                       {exp.period}
                     </div>
 
                     {/* Badge */}
                     <span className="neo-tag mb-4 inline-block">{exp.badge}</span>
 
-                    <h3 className="text-2xl md:text-3xl font-black uppercase mb-2 leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-black uppercase mb-2 leading-tight text-text-primary">
                       {exp.role}
                     </h3>
                     
-                    <h4 className="text-lg font-mono font-bold text-gray-600 mb-4 pb-2 border-b-4 border-neo-dark inline-block">
+                    <h4 className="text-lg font-mono font-bold text-text-secondary mb-4 pb-2 border-b-4 border-neo-border inline-block">
                       {exp.company}
                     </h4>
                     
-                    <p className="text-sm font-mono mb-4 text-gray-500 flex items-center gap-2">
+                    <p className="text-sm font-mono mb-4 text-text-muted flex items-center gap-2">
                       <span className="inline-block w-4 h-4 bg-neo-primary rounded-full animate-pulse" />
                       {exp.location}
                     </p>
 
-                    <p className="mb-6 leading-relaxed text-gray-700">
+                    <p className="mb-6 leading-relaxed text-text-secondary">
                       {exp.description}
                     </p>
 
@@ -142,7 +142,7 @@ export default function Experience() {
 
                     {/* Decorative corner */}
                     <div className="absolute bottom-0 right-0 w-12 h-12 overflow-hidden">
-                      <div className={`absolute bottom-0 right-0 w-24 h-24 ${exp.color} transform rotate-45 translate-x-12 translate-y-12 border-4 border-neo-dark`} />
+                      <div className={`absolute bottom-0 right-0 w-24 h-24 ${exp.color} transform rotate-45 translate-x-12 translate-y-12 border-4 border-neo-border`} />
                     </div>
                   </div>
                 </div>

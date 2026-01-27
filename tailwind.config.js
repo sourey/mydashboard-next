@@ -9,25 +9,35 @@ module.exports = {
     extend: {
       colors: {
         neo: {
-          bg: '#FFF8E7', // Warm cream
-          primary: '#FF3366', // Hot pink/red
-          secondary: '#00D4AA', // Electric teal
-          accent: '#FFE500', // Bright yellow
-          purple: '#9D4EDD', // Vibrant purple
-          orange: '#FF6B35', // Punchy orange
-          blue: '#00B4D8', // Cyan blue
-          dark: '#0A0A0A', // Deep black
-          lime: '#C7F464', // Lime green
+          bg: 'var(--neo-bg)',
+          primary: 'var(--neo-primary)',
+          secondary: 'var(--neo-secondary)',
+          accent: 'var(--neo-accent)',
+          purple: 'var(--neo-purple)',
+          orange: 'var(--neo-orange)',
+          blue: 'var(--neo-blue)',
+          dark: 'var(--neo-dark)',
+          lime: 'var(--neo-lime)',
+          border: 'var(--border-color)',
+        },
+        card: {
+          bg: 'var(--card-bg)',
+        },
+        text: {
+          primary: 'var(--text-primary)',
+          secondary: 'var(--text-secondary)',
+          muted: 'var(--text-muted)',
         },
       },
       boxShadow: {
-        'neo': '4px 4px 0px 0px #0A0A0A',
-        'neo-hover': '2px 2px 0px 0px #0A0A0A',
-        'neo-lg': '8px 8px 0px 0px #0A0A0A',
-        'neo-xl': '12px 12px 0px 0px #0A0A0A',
-        'neo-colored': '4px 4px 0px 0px #FF3366',
-        'neo-purple': '4px 4px 0px 0px #9D4EDD',
-        'neo-teal': '4px 4px 0px 0px #00D4AA',
+        'neo': '4px 4px 0px 0px var(--border-color)',
+        'neo-hover': '2px 2px 0px 0px var(--border-color)',
+        'neo-sm': '2px 2px 0px 0px var(--border-color)',
+        'neo-lg': '8px 8px 0px 0px var(--border-color)',
+        'neo-xl': '12px 12px 0px 0px var(--border-color)',
+        'neo-colored': '4px 4px 0px 0px var(--neo-primary)',
+        'neo-purple': '4px 4px 0px 0px var(--neo-purple)',
+        'neo-teal': '4px 4px 0px 0px var(--neo-secondary)',
       },
       borderWidth: {
         '3': '3px',
