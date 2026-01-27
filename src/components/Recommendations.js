@@ -606,6 +606,258 @@ const recommendations = {
       director: 'John Woo',
       image: 'https://image.tmdb.org/t/p/w500/aZ6WpGFEJoYJMGbELumgPG5OHL8.jpg'
     },
+
+    // === CRIME THRILLER ===
+    { 
+      title: 'The Silence of the Lambs', 
+      year: '1991', 
+      genre: 'Crime Thriller', 
+      rating: '9.6', 
+      emoji: '🦋',
+      description: 'A young FBI cadet must confide in an incarcerated cannibalistic killer to catch another serial killer.',
+      director: 'Jonathan Demme',
+      image: 'https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg'
+    },
+    { 
+      title: 'Heat', 
+      year: '1995', 
+      genre: 'Crime Thriller', 
+      rating: '9.4', 
+      emoji: '🔥',
+      description: 'A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.',
+      director: 'Michael Mann',
+      image: 'https://image.tmdb.org/t/p/w500/rrBuGu0YKGo8wDOri2ELvrbLVaH.jpg'
+    },
+    { 
+      title: 'Prisoners', 
+      year: '2013', 
+      genre: 'Crime Thriller', 
+      rating: '9.2', 
+      emoji: '🔒',
+      description: 'When the police search for two missing girls is too slow, a desperate father takes matters into his own hands.',
+      director: 'Denis Villeneuve',
+      image: 'https://image.tmdb.org/t/p/w500/uhviyknSjzMnZzRiN2dpeY6BbQv.jpg'
+    },
+    { 
+      title: 'Sicario', 
+      year: '2015', 
+      genre: 'Crime Thriller', 
+      rating: '9.0', 
+      emoji: '💀',
+      description: 'An idealistic FBI agent is enlisted by a government task force to aid in the escalating war against drugs at the border.',
+      director: 'Denis Villeneuve',
+      image: 'https://image.tmdb.org/t/p/w500/4n3gGRyX0CKoJMNqIYJQvoDkgNW.jpg'
+    },
+    { 
+      title: 'No Country for Old Men', 
+      year: '2007', 
+      genre: 'Crime Thriller', 
+      rating: '9.5', 
+      emoji: '💰',
+      description: 'Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and takes a suitcase of cash.',
+      director: 'Coen Brothers',
+      image: 'https://image.tmdb.org/t/p/w500/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg'
+    },
+    { 
+      title: 'The Usual Suspects', 
+      year: '1995', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '🎭',
+      description: 'A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat. Who is Keyser Söze?',
+      director: 'Bryan Singer',
+      image: 'https://image.tmdb.org/t/p/w500/bUPmtQzrRhzqYySeiMpv7GurAfm.jpg'
+    },
+    { 
+      title: 'L.A. Confidential', 
+      year: '1997', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '🔫',
+      description: 'As corruption spreads through 1950s LA, three policemen must each decide whether to accept or reject the corruption that permeates their department.',
+      director: 'Curtis Hanson',
+      image: 'https://image.tmdb.org/t/p/w500/djQcGO7e1lmVyhGRAIz1tGc8oeq.jpg'
+    },
+    { 
+      title: 'Mystic River', 
+      year: '2003', 
+      genre: 'Crime Thriller', 
+      rating: '8.9', 
+      emoji: '🌊',
+      description: 'The lives of three men who were childhood friends are shattered when one of them has a family tragedy.',
+      director: 'Clint Eastwood',
+      image: 'https://image.tmdb.org/t/p/w500/9NiEnJ07KPGM4R4qpvTpWxjIl7O.jpg'
+    },
+    { 
+      title: 'The Town', 
+      year: '2010', 
+      genre: 'Crime Thriller', 
+      rating: '8.8', 
+      emoji: '🏦',
+      description: 'A longtime thief, planning his next job, falls for a bank manager and starts to question his way of life.',
+      director: 'Ben Affleck',
+      image: 'https://image.tmdb.org/t/p/w500/ehAK9sAp8tTbwsHkfCduRdrRi1b.jpg'
+    },
+    { 
+      title: 'Wind River', 
+      year: '2017', 
+      genre: 'Crime Thriller', 
+      rating: '8.7', 
+      emoji: '❄️',
+      description: 'A veteran tracker with the Fish and Wildlife Service helps to investigate the murder of a young woman on a remote Native American reservation.',
+      director: 'Taylor Sheridan',
+      image: 'https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe2Co.jpg'
+    },
+    { 
+      title: 'Hell or High Water', 
+      year: '2016', 
+      genre: 'Crime Thriller', 
+      rating: '8.6', 
+      emoji: '🤠',
+      description: 'A divorced father and his ex-con older brother resort to a desperate scheme to save their family\'s ranch in West Texas.',
+      director: 'David Mackenzie',
+      image: 'https://image.tmdb.org/t/p/w500/swpaoXpPwp6MZqNjz5VPhELKqnT.jpg'
+    },
+    { 
+      title: 'A Prophet', 
+      year: '2009', 
+      genre: 'Crime Thriller', 
+      rating: '9.0', 
+      emoji: '🔪',
+      description: 'A young Arab man is sent to a French prison, where he learns the brutal ways of survival.',
+      director: 'Jacques Audiard',
+      image: 'https://image.tmdb.org/t/p/w500/cbILLCVp2KMFKM61JgEsCE3BDCh.jpg'
+    },
+    { 
+      title: 'City of God', 
+      year: '2002', 
+      genre: 'Crime Thriller', 
+      rating: '9.4', 
+      emoji: '📷',
+      description: 'In the slums of Rio, two kids\' paths diverge as one struggles to become a photographer and the other a kingpin.',
+      director: 'Fernando Meirelles',
+      image: 'https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg'
+    },
+    { 
+      title: 'The Girl with the Dragon Tattoo', 
+      year: '2011', 
+      genre: 'Crime Thriller', 
+      rating: '8.8', 
+      emoji: '🐉',
+      description: 'A journalist and a computer hacker investigate a wealthy family to find out what happened to a woman who disappeared 40 years ago.',
+      director: 'David Fincher',
+      image: 'https://image.tmdb.org/t/p/w500/rtYbcKSqPz7XjR0EiNN2eYvzAVw.jpg'
+    },
+    { 
+      title: 'Nightcrawler', 
+      year: '2014', 
+      genre: 'Crime Thriller', 
+      rating: '8.9', 
+      emoji: '📹',
+      description: 'A con man becomes a crime journalist in Los Angeles, blurring the line between observer and participant.',
+      director: 'Dan Gilroy',
+      image: 'https://image.tmdb.org/t/p/w500/8IG4jSHKqSqf9i1hFfbFRXRxV0c.jpg'
+    },
+    { 
+      title: 'Zodiac', 
+      year: '2007', 
+      genre: 'Crime Thriller', 
+      rating: '9.0', 
+      emoji: '🔍',
+      description: 'In the late 1960s/early 1970s, a San Francisco cartoonist becomes obsessed with tracking down the Zodiac Killer.',
+      director: 'David Fincher',
+      image: 'https://image.tmdb.org/t/p/w500/aIfHEi5e4RVZiVlxZKSWYEyLt8W.jpg'
+    },
+    { 
+      title: 'The Chaser', 
+      year: '2008', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '🏃',
+      description: 'A disgraced ex-cop-turned-pimp scrambles to find one of his missing girls. A Korean masterpiece.',
+      director: 'Na Hong-jin',
+      image: 'https://image.tmdb.org/t/p/w500/6dw50NlF6dkCVD2bUqchN7lZvd.jpg'
+    },
+    { 
+      title: 'I Saw the Devil', 
+      year: '2010', 
+      genre: 'Crime Thriller', 
+      rating: '8.9', 
+      emoji: '😈',
+      description: 'A secret agent exacts revenge on a serial killer through a series of captures and releases.',
+      director: 'Kim Jee-woon',
+      image: 'https://image.tmdb.org/t/p/w500/rZuAh3KBpkJcl7zYxPoIq36sEQy.jpg'
+    },
+    { 
+      title: 'Memories of Murder', 
+      year: '2003', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '🌧️',
+      description: 'In 1986 Korea, two detectives investigate a series of brutal murders. Based on a true story.',
+      director: 'Bong Joon-ho',
+      image: 'https://image.tmdb.org/t/p/w500/wN8gApFQFxeOhvJaZQ1gF6WGHZb.jpg'
+    },
+    { 
+      title: 'The Secret in Their Eyes', 
+      year: '2009', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '👁️',
+      description: 'A retired legal counselor writes a novel hoping to find closure for an unsolved case from 25 years ago.',
+      director: 'Juan José Campanella',
+      image: 'https://image.tmdb.org/t/p/w500/bEtR0DF6xMbdYy2R1v3dAhOMlc8.jpg'
+    },
+    { 
+      title: 'Den of Thieves', 
+      year: '2018', 
+      genre: 'Crime Thriller', 
+      rating: '8.5', 
+      emoji: '🏛️',
+      description: 'An elite unit of the LA County Sheriff\'s Department squares off against a crew of ex-military bank robbers.',
+      director: 'Christian Gudegast',
+      image: 'https://image.tmdb.org/t/p/w500/gv2edIq4V1u0UZAe4cV5ORHTFWE.jpg'
+    },
+    { 
+      title: 'Collateral', 
+      year: '2004', 
+      genre: 'Crime Thriller', 
+      rating: '8.8', 
+      emoji: '🚕',
+      description: 'A cab driver finds himself the hostage of an engaging contract killer as he makes his rounds in LA.',
+      director: 'Michael Mann',
+      image: 'https://image.tmdb.org/t/p/w500/nqFqd6EEy3yjFPM9lLlQE5JLt3v.jpg'
+    },
+    { 
+      title: 'The Bone Collector', 
+      year: '1999', 
+      genre: 'Crime Thriller', 
+      rating: '8.0', 
+      emoji: '🦴',
+      description: 'A quadriplegic ex-homicide detective and his female partner try to track down a serial killer.',
+      director: 'Phillip Noyce',
+      image: 'https://image.tmdb.org/t/p/w500/8rn14oTi6LqsOevDa3TYHRuPGIi.jpg'
+    },
+    { 
+      title: 'The Fugitive', 
+      year: '1993', 
+      genre: 'Crime Thriller', 
+      rating: '8.9', 
+      emoji: '🏃‍♂️',
+      description: 'A doctor wrongfully convicted of murdering his wife escapes from custody to find the real killer.',
+      director: 'Andrew Davis',
+      image: 'https://image.tmdb.org/t/p/w500/vTyX4t29gXIrdzjfqWbVkTn4PVq.jpg'
+    },
+    { 
+      title: 'Uncut Gems', 
+      year: '2019', 
+      genre: 'Crime Thriller', 
+      rating: '8.6', 
+      emoji: '💎',
+      description: 'A charismatic jeweler makes a high-stakes bet that could lead to the windfall of a lifetime.',
+      director: 'Safdie Brothers',
+      image: 'https://image.tmdb.org/t/p/w500/dL9eL8A4vaFAJXJ4TnvOZcL3JsQ.jpg'
+    },
   ],
   series: [
     // === TV SHOWS ===
@@ -739,6 +991,157 @@ const recommendations = {
       description: 'Breathtaking animation and an emotional story of family and revenge.',
       seasons: '4 seasons',
       image: 'https://image.tmdb.org/t/p/w500/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg'
+    },
+    // === CRIME THRILLER ===
+    { 
+      title: 'True Detective', 
+      year: '2014-', 
+      genre: 'Crime Thriller', 
+      rating: '9.5', 
+      emoji: '🔍',
+      description: 'An anthology series where police investigations unearth dark secrets. Season 1 is a masterpiece.',
+      seasons: '4 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg'
+    },
+    { 
+      title: 'Mindhunter', 
+      year: '2017-2019', 
+      genre: 'Crime Thriller', 
+      rating: '9.4', 
+      emoji: '🧠',
+      description: 'FBI agents interview imprisoned serial killers to understand how they think. Chillingly brilliant.',
+      seasons: '2 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/i9TLvl7Wa2R4cJEDBD8wrQSfqL7.jpg'
+    },
+    { 
+      title: 'The Wire', 
+      year: '2002-2008', 
+      genre: 'Crime Thriller', 
+      rating: '9.8', 
+      emoji: '🏙️',
+      description: 'The greatest TV series ever made. A realistic look at Baltimore\'s drug scene and institutions.',
+      seasons: '5 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg'
+    },
+    { 
+      title: 'Ozark', 
+      year: '2017-2022', 
+      genre: 'Crime Thriller', 
+      rating: '9.2', 
+      emoji: '💵',
+      description: 'A financial advisor is forced to relocate his family to the Ozarks to launder money for a drug cartel.',
+      seasons: '4 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/pCGyPVrI9Fxz7RATURC2cSf7yTT.jpg'
+    },
+    { 
+      title: 'Fargo', 
+      year: '2014-', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '❄️',
+      description: 'An anthology series inspired by the Coen Brothers film. Dark humor meets crime.',
+      seasons: '5 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/6U9CPeD8obHzweikFhiLhpc7YBT.jpg'
+    },
+    { 
+      title: 'Narcos', 
+      year: '2015-2017', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '🌴',
+      description: 'The rise and fall of Colombian drug lord Pablo Escobar. Plata o plomo.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg'
+    },
+    { 
+      title: 'The Sopranos', 
+      year: '1999-2007', 
+      genre: 'Crime Thriller', 
+      rating: '9.7', 
+      emoji: '🍝',
+      description: 'A New Jersey mob boss struggles to balance family life with his criminal organization. Revolutionary TV.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/57okJJUBK0AaijxLh3RjNUaMvFN.jpg'
+    },
+    { 
+      title: 'Peaky Blinders', 
+      year: '2013-2022', 
+      genre: 'Crime Thriller', 
+      rating: '9.2', 
+      emoji: '🎩',
+      description: 'A gangster family epic set in 1900s England. By order of the Peaky Blinders.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg'
+    },
+    { 
+      title: 'Better Call Saul', 
+      year: '2015-2022', 
+      genre: 'Crime Thriller', 
+      rating: '9.5', 
+      emoji: '⚖️',
+      description: 'The transformation of Jimmy McGill into criminal lawyer Saul Goodman. Breaking Bad prequel.',
+      seasons: '6 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg'
+    },
+    { 
+      title: 'Dexter', 
+      year: '2006-2013', 
+      genre: 'Crime Thriller', 
+      rating: '9.0', 
+      emoji: '🔪',
+      description: 'A Miami forensics expert leads a secret life as a serial killer who targets other murderers.',
+      seasons: '8 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/58H2yz0XlPpoaFHkHj7mNSBTo3f.jpg'
+    },
+    { 
+      title: 'Mare of Easttown', 
+      year: '2021', 
+      genre: 'Crime Thriller', 
+      rating: '9.1', 
+      emoji: '🏘️',
+      description: 'A detective in a small Pennsylvania town investigates a murder as her life crumbles around her.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/cO5bZ7l1WzJf4JsFg3ZDoGRjZ3E.jpg'
+    },
+    { 
+      title: 'Sharp Objects', 
+      year: '2018', 
+      genre: 'Crime Thriller', 
+      rating: '8.8', 
+      emoji: '🌹',
+      description: 'A reporter confronts her troubled past when she returns home to investigate the murder of two girls.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/qnLsXfmVNDZfn45MN5cQr9wXFNl.jpg'
+    },
+    { 
+      title: 'The Night Of', 
+      year: '2016', 
+      genre: 'Crime Thriller', 
+      rating: '9.0', 
+      emoji: '🌙',
+      description: 'After a night of partying, a student wakes up to find a dead body. A gripping legal thriller.',
+      seasons: '1 season',
+      image: 'https://image.tmdb.org/t/p/w500/4pLjMyAkGLBZqkE4YI2e4m1L9gT.jpg'
+    },
+    { 
+      title: 'Hannibal', 
+      year: '2013-2015', 
+      genre: 'Crime Thriller', 
+      rating: '9.2', 
+      emoji: '🍽️',
+      description: 'An FBI profiler forms a twisted bond with the brilliant psychiatrist Dr. Hannibal Lecter.',
+      seasons: '3 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/dF0mgjR0TAeNNfZKMpIJq2WGHfZ.jpg'
+    },
+    { 
+      title: 'Sherlock', 
+      year: '2010-2017', 
+      genre: 'Crime Thriller', 
+      rating: '9.3', 
+      emoji: '🔎',
+      description: 'A modern update of Sherlock Holmes. Benedict Cumberbatch brilliantly portrays the detective.',
+      seasons: '4 seasons',
+      image: 'https://image.tmdb.org/t/p/w500/f9zGxLHGyQB10cMDZNY5ZcGKhZi.jpg'
     },
   ],
   books: [
