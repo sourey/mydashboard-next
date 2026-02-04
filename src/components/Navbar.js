@@ -40,9 +40,11 @@ export default function Navbar() {
         
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-3 items-center">
-          <NavLink href="#about" color="bg-neo-lime text-black">About</NavLink>
-          <NavLink href="#experience" color="bg-neo-secondary text-black">Experience</NavLink>
-          <NavLink href="#resume" color="bg-neo-blue text-black">Resume</NavLink>
+        <NavLink href="https://astro-blogs-mu.vercel.app/" color="bg-neo-blue text-black">Blogs</NavLink>
+
+          {/* <NavLink href="#about" color="bg-neo-lime text-black">About</NavLink>
+          <NavLink href="#experience" color="bg-neo-secondary text-black">Experience</NavLink> */}
+          <NavLink href="#resume" color="bg-neo-blue text-black">Resume</NavLink> 
           <NavLink href="#stack" color="bg-neo-accent text-black">Stack</NavLink>
           <NavLink href="#projects" color="bg-neo-purple text-white">Projects</NavLink>
           <NavLink href="/hobbies" color="bg-neo-orange text-black">Hobbies</NavLink>
@@ -54,6 +56,7 @@ export default function Navbar() {
           </a>
        
         </div>
+
         <ThemeToggle />
 
         {/* Mobile Menu Button + Theme Toggle */}
