@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import ThemeToggle from './ThemeToggle';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,22 +12,24 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav 
+    <nav
       className={`w-full py-4 px-4 sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-neo-bg/95 backdrop-blur-sm border-b-4 border-neo-border' : 'bg-transparent'
+        scrolled
+          ? "bg-neo-bg/95 backdrop-blur-sm border-b-4 border-neo-border"
+          : "bg-transparent"
       }`}
       aria-label="Main navigation"
       role="navigation"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="group relative"
           aria-label="Saurav Sitaula - Home"
           title="Saurav Sitaula Portfolio"
@@ -37,68 +39,104 @@ export default function Navbar() {
             Saurav<span className="text-neo-accent">.dev</span>
           </div>
         </Link>
-        
+
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-3 items-center">
-        <NavLink href="https://astro-blog-ten-pi.vercel.app/" color="bg-neo-blue text-black">Blogs</NavLink>
+          <NavLink
+            href="https://astro-blog-ten-pi.vercel.app/"
+            color="bg-neo-blue text-black"
+          >
+            Blogs
+          </NavLink>
 
           {/* <NavLink href="#about" color="bg-neo-lime text-black">About</NavLink>
           <NavLink href="#experience" color="bg-neo-secondary text-black">Experience</NavLink> */}
-          <NavLink href="#resume" color="bg-neo-blue text-black">Resume</NavLink> 
-          <NavLink href="#stack" color="bg-neo-accent text-black">Stack</NavLink>
-          <NavLink href="#projects" color="bg-neo-purple text-white">Projects</NavLink>
-          <NavLink href="/hobbies" color="bg-neo-orange text-black">Hobbies</NavLink>
-          <a 
-            href="#contact" 
-            className="neo-button bg-neo-primary text-sm py-2"
-          >
+          <NavLink href="#resume" color="bg-neo-blue text-black">
+            Resume
+          </NavLink>
+          <NavLink href="#stack" color="bg-neo-accent text-black">
+            Stack
+          </NavLink>
+          <NavLink href="#projects" color="bg-neo-purple text-white">
+            Projects
+          </NavLink>
+          <NavLink href="/hobbies" color="bg-neo-orange text-black">
+            Hobbies
+          </NavLink>
+          <a href="#contact" className="neo-button bg-neo-primary text-sm py-2">
             Contact →
           </a>
-       
+          <ThemeToggle />
         </div>
-
-        <ThemeToggle />
 
         {/* Mobile Menu Button + Theme Toggle */}
         <div className="lg:hidden flex gap-2 items-center">
           <ThemeToggle />
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className={`font-black text-2xl border-4 border-neo-border w-12 h-12 flex items-center justify-center shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${
-              isOpen ? 'bg-neo-primary text-white rotate-90' : 'bg-neo-accent text-neo-dark'
+              isOpen
+                ? "bg-neo-primary text-white rotate-90"
+                : "bg-neo-accent text-neo-dark"
             }`}
-            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-label={
+              isOpen ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
           >
-            {isOpen ? '✕' : '☰'}
+            {isOpen ? "✕" : "☰"}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div id="mobile-menu" className="lg:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-border" role="menu">
+        <div
+          id="mobile-menu"
+          className="lg:hidden absolute top-full left-0 right-0 bg-neo-bg border-b-4 border-neo-border"
+          role="menu"
+        >
           <div className="flex flex-col p-4 gap-3 max-w-7xl mx-auto">
-            <MobileNavLink href="#about" onClick={() => setIsOpen(false)} color="bg-neo-lime text-black">
-              <span className="mr-2">👋</span> About
+            <MobileNavLink
+              href="https://astro-blog-ten-pi.vercel.app/"
+              color="text-black"
+            >
+              <span className="mr-2">📰</span> Blogs
             </MobileNavLink>
-            <MobileNavLink href="#experience" onClick={() => setIsOpen(false)} color="bg-neo-secondary text-black">
-              <span className="mr-2">💼</span> Experience
-            </MobileNavLink>
-            <MobileNavLink href="#resume" onClick={() => setIsOpen(false)} color="bg-neo-blue text-black">
+            <MobileNavLink
+              href="#resume"
+              onClick={() => setIsOpen(false)}
+              color=" text-black"
+            >
               <span className="mr-2">📄</span> Resume
             </MobileNavLink>
-            <MobileNavLink href="#stack" onClick={() => setIsOpen(false)} color="bg-neo-accent text-black">
+            <MobileNavLink
+              href="#stack"
+              onClick={() => setIsOpen(false)}
+              color=" text-black"
+            >
               <span className="mr-2">⚡</span> Tech Stack
             </MobileNavLink>
-            <MobileNavLink href="#projects" onClick={() => setIsOpen(false)} color="bg-neo-purple text-white">
+            <MobileNavLink
+              href="#projects"
+              onClick={() => setIsOpen(false)}
+              color=" text-black"
+            >
               <span className="mr-2">🚀</span> Projects
             </MobileNavLink>
-            <MobileNavLink href="/hobbies" onClick={() => setIsOpen(false)} color="bg-neo-orange text-black">
+            <MobileNavLink
+              href="/hobbies"
+              onClick={() => setIsOpen(false)}
+              color="text-black"
+            >
               <span className="mr-2">📸</span> Hobbies
             </MobileNavLink>
-            <MobileNavLink href="#contact" onClick={() => setIsOpen(false)} color="bg-neo-primary text-white">
+            <MobileNavLink
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              color="text-black"
+            >
               <span className="mr-2">📧</span> Contact
             </MobileNavLink>
           </div>
@@ -108,10 +146,10 @@ export default function Navbar() {
   );
 }
 
-function NavLink({ href, children, color = 'bg-card-bg' }) {
+function NavLink({ href, children, color = "bg-card-bg" }) {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       className={`px-4 py-2 font-black text-sm uppercase tracking-wider border-4 border-neo-border shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${color}`}
     >
       {children}
@@ -119,12 +157,12 @@ function NavLink({ href, children, color = 'bg-card-bg' }) {
   );
 }
 
-function MobileNavLink({ href, children, onClick, color = 'bg-card-bg' }) {
+function MobileNavLink({ href, children, onClick, color = "bg-card-bg" }) {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       onClick={onClick}
-      className={`flex items-center p-4 font-black text-lg uppercase tracking-wider border-4 border-neo-border shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${color}`}
+      className={`flex items-center px-4 py-2 font-black text-sm uppercase tracking-wider border-4 border-neo-border shadow-neo hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all ${color}`}
     >
       {children}
     </Link>
