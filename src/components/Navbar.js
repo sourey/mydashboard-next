@@ -40,7 +40,7 @@ export default function Navbar() {
         
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-3 items-center">
-        <NavLink href="https://astro-blogs-mu.vercel.app/" color="bg-neo-blue text-black">Blogs</NavLink>
+        <NavLink href="https://astro-blog-ten-pi.vercel.app/" color="bg-neo-blue text-black">Blogs</NavLink>
 
           {/* <NavLink href="#about" color="bg-neo-lime text-black">About</NavLink>
           <NavLink href="#experience" color="bg-neo-secondary text-black">Experience</NavLink> */}
